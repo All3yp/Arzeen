@@ -14,8 +14,9 @@
 		180355BE2510E85D00EE830F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180355BC2510E85D00EE830F /* LaunchScreen.storyboard */; };
 		180355C92510E85D00EE830F /* CoffeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180355C82510E85D00EE830F /* CoffeeTests.swift */; };
 		1867454825124C1900DB2043 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867454725124C1900DB2043 /* LeftViewController.swift */; };
-		1867454A25124C2F00DB2043 /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867454925124C2F00DB2043 /* RightViewController.swift */; };
+		1867454A25124C2F00DB2043 /* SalesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867454925124C2F00DB2043 /* SalesViewController.swift */; };
 		1867454C25124CEC00DB2043 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867454B25124CEC00DB2043 /* TabBarViewController.swift */; };
+		E62E92DA2513A315008D3C56 /* SalesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62E92D92513A315008D3C56 /* SalesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +41,9 @@
 		180355C82510E85D00EE830F /* CoffeeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeTests.swift; sourceTree = "<group>"; };
 		180355CA2510E85D00EE830F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1867454725124C1900DB2043 /* LeftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
-		1867454925124C2F00DB2043 /* RightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightViewController.swift; sourceTree = "<group>"; };
+		1867454925124C2F00DB2043 /* SalesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesViewController.swift; sourceTree = "<group>"; };
 		1867454B25124CEC00DB2043 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		E62E92D92513A315008D3C56 /* SalesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				180355BC2510E85D00EE830F /* LaunchScreen.storyboard */,
+				E62E92D92513A315008D3C56 /* SalesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -123,7 +126,7 @@
 			children = (
 				180355B52510E85C00EE830F /* ViewController.swift */,
 				1867454725124C1900DB2043 /* LeftViewController.swift */,
-				1867454925124C2F00DB2043 /* RightViewController.swift */,
+				1867454925124C2F00DB2043 /* SalesViewController.swift */,
 				1867454B25124CEC00DB2043 /* TabBarViewController.swift */,
 			);
 			path = Controllers;
@@ -250,9 +253,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E62E92DA2513A315008D3C56 /* SalesView.swift in Sources */,
 				180355B62510E85C00EE830F /* ViewController.swift in Sources */,
 				1867454825124C1900DB2043 /* LeftViewController.swift in Sources */,
-				1867454A25124C2F00DB2043 /* RightViewController.swift in Sources */,
+				1867454A25124C2F00DB2043 /* SalesViewController.swift in Sources */,
 				1867454C25124CEC00DB2043 /* TabBarViewController.swift in Sources */,
 				180355B22510E85C00EE830F /* AppDelegate.swift in Sources */,
 				180355B42510E85C00EE830F /* SceneDelegate.swift in Sources */,

@@ -9,43 +9,31 @@
 import UIKit
 
 class TabBarViewController: UITabBarController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         view.backgroundColor = .white
         
         // Do any additional setup after loading the view.
         
-            let mainVC = ViewController()
+        let mainVC = ViewController()
         
         mainVC.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
         
-              let leftVC = LeftViewController()
+        let leftVC = LeftViewController()
         
         leftVC.tabBarItem = UITabBarItem(tabBarSystemItem: .more, tag: 1)
         
-              let rightVC = RightViewController()
+        let rightVC = SalesViewController()
         
         rightVC.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 5)
-              
-             let tabBarList = [mainVC, leftVC, rightVC]
+        
+        let tabBarList = [mainVC, leftVC, rightVC]
         
         viewControllers = tabBarList
         
         tabBar.backgroundColor = .clear
         
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
