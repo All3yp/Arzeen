@@ -16,8 +16,10 @@
 		1867454825124C1900DB2043 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867454725124C1900DB2043 /* LeftViewController.swift */; };
 		1867454A25124C2F00DB2043 /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867454925124C2F00DB2043 /* RightViewController.swift */; };
 		1867454C25124CEC00DB2043 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867454B25124CEC00DB2043 /* TabBarViewController.swift */; };
-		1867454F2513AF2900DB2043 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867454E2513AF2900DB2043 /* OnboardingViewController.swift */; };
+		1867454F2513AF2900DB2043 /* CollectionOnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867454E2513AF2900DB2043 /* CollectionOnboardViewController.swift */; };
 		1867455125141E5400DB2043 /* UiColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867455025141E5400DB2043 /* UiColor+Extension.swift */; };
+		186745562514EE3600DB2043 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186745552514EE3600DB2043 /* OnboardingCollectionViewCell.swift */; };
+		186745582514FAB800DB2043 /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186745572514FAB800DB2043 /* OnBoarding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +46,10 @@
 		1867454725124C1900DB2043 /* LeftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
 		1867454925124C2F00DB2043 /* RightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightViewController.swift; sourceTree = "<group>"; };
 		1867454B25124CEC00DB2043 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		1867454E2513AF2900DB2043 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		1867454E2513AF2900DB2043 /* CollectionOnboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionOnboardViewController.swift; sourceTree = "<group>"; };
 		1867455025141E5400DB2043 /* UiColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiColor+Extension.swift"; sourceTree = "<group>"; };
+		186745552514EE3600DB2043 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		186745572514FAB800DB2043 /* OnBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				1867455025141E5400DB2043 /* UiColor+Extension.swift */,
+				186745572514FAB800DB2043 /* OnBoarding.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 		18E405412510EAB1004387EE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				186745552514EE3600DB2043 /* OnboardingCollectionViewCell.swift */,
 				180355BC2510E85D00EE830F /* LaunchScreen.storyboard */,
 			);
 			path = Views;
@@ -130,7 +136,7 @@
 				1867454725124C1900DB2043 /* LeftViewController.swift */,
 				1867454925124C2F00DB2043 /* RightViewController.swift */,
 				1867454B25124CEC00DB2043 /* TabBarViewController.swift */,
-				1867454E2513AF2900DB2043 /* OnboardingViewController.swift */,
+				1867454E2513AF2900DB2043 /* CollectionOnboardViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -260,9 +266,11 @@
 				1867454825124C1900DB2043 /* LeftViewController.swift in Sources */,
 				1867454A25124C2F00DB2043 /* RightViewController.swift in Sources */,
 				1867454C25124CEC00DB2043 /* TabBarViewController.swift in Sources */,
-				1867454F2513AF2900DB2043 /* OnboardingViewController.swift in Sources */,
+				1867454F2513AF2900DB2043 /* CollectionOnboardViewController.swift in Sources */,
+				186745582514FAB800DB2043 /* OnBoarding.swift in Sources */,
 				180355B22510E85C00EE830F /* AppDelegate.swift in Sources */,
 				180355B42510E85C00EE830F /* SceneDelegate.swift in Sources */,
+				186745562514EE3600DB2043 /* OnboardingCollectionViewCell.swift in Sources */,
 				1867455125141E5400DB2043 /* UiColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
