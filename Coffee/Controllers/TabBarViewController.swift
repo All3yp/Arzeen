@@ -26,10 +26,18 @@ class TabBarViewController: UITabBarController {
         leftVC.tabBarItem = UITabBarItem(tabBarSystemItem: .more, tag: 1)
         
         let rightVC = SalesViewController()
+        let navSalesController = UINavigationController()
+        navSalesController.navigationBar.barTintColor = UIColor.textColor
+        navSalesController.navigationBar.backgroundColor = UIColor.navigationColor
+        let attrs = [ NSAttributedString.Key.foregroundColor: UIColor.textColor ]
+        navSalesController.navigationBar.largeTitleTextAttributes = attrs as [NSAttributedString.Key: Any]
         
+        navSalesController.navigationBar.prefersLargeTitles = true
+        navSalesController.navigationBar.isTranslucent = false
+        navSalesController.pushViewController(rightVC, animated: true)
         rightVC.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 5)
         
-        let tabBarList = [mainVC, leftVC, rightVC]
+        let tabBarList = [mainVC, leftVC, navSalesController]
         
         viewControllers = tabBarList
         
