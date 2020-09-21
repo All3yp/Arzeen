@@ -13,39 +13,29 @@ class TabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor(red: 0.16, green: 0.12, blue: 0.13, alpha: 1.00)
         
         // Do any additional setup after loading the view.
         
-            let mainVC = ViewController()
-        
+        let mainVC = DrinksViewController()//DrinksTableViewController()
+        let navDrinksController = UINavigationController(rootViewController: mainVC)
+        navDrinksController.navigationBar.barTintColor = UIColor(red: 0.16, green: 0.12, blue: 0.13, alpha: 1.00)
+        navDrinksController.navigationBar.backgroundColor = UIColor(red: 0.16, green: 0.12, blue: 0.13, alpha: 1.00)
+
+
+        navDrinksController.navigationBar.prefersLargeTitles = true
+        navDrinksController.navigationBar.isTranslucent = false
         mainVC.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
         
-              let leftVC = LeftViewController()
-        
+        let leftVC = ViewController()
         leftVC.tabBarItem = UITabBarItem(tabBarSystemItem: .more, tag: 1)
         
-              let rightVC = RightViewController()
-        
+        let rightVC = RightViewController()
         rightVC.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 5)
               
-             let tabBarList = [mainVC, leftVC, rightVC]
-        
+        let tabBarList = [navDrinksController, leftVC, rightVC]
         viewControllers = tabBarList
-        
         tabBar.backgroundColor = .clear
         
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

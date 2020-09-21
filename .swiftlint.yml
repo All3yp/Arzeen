@@ -1,5 +1,8 @@
 disabled_rules:
 - trailing_whitespace
+force_cast: warning # implicitly
+force_try:
+  severity: warning # explicitly
 opt_in_rules:
 - empty_count
 - empty_string
