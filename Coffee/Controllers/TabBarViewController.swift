@@ -19,11 +19,11 @@ class TabBarViewController: UITabBarController {
         
         let mainVC = ViewController()
         
-        mainVC.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
+        mainVC.tabBarItem = UITabBarItem(title: "Cafés", image: UIImage(named: "xicaraCafe"), tag: 0)
         
         let leftVC = LeftViewController()
         
-        leftVC.tabBarItem = UITabBarItem(tabBarSystemItem: .more, tag: 1)
+        leftVC.tabBarItem = UITabBarItem(title: "Grãos", image: UIImage(named: "graosCafe"), tag: 1)
         
         let rightVC = SalesViewController()
         let navSalesController = UINavigationController()
@@ -35,7 +35,7 @@ class TabBarViewController: UITabBarController {
         navSalesController.navigationBar.prefersLargeTitles = true
         navSalesController.navigationBar.isTranslucent = false
         navSalesController.pushViewController(rightVC, animated: true)
-        rightVC.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 5)
+        rightVC.tabBarItem = UITabBarItem(title: "Locais de Venda", image: UIImage(named: "sacolaCafe"), tag: 2)
         
         let tabBarList = [mainVC, leftVC, navSalesController]
         
