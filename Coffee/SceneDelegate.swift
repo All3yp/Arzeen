@@ -6,8 +6,10 @@
 //  Copyright © 2020 Alley Pereira. All rights reserved.
 //
 
-import UIKit
+// swiftlint:disable vertical_whitespace
+// swiftlint:disable line_length
 
+import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     var window: UIWindow?
@@ -19,7 +21,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = UINavigationController(rootViewController: TabBarViewController())
+//      window?.rootViewController = UINavigationController(rootViewController: TabBarViewController())
+        window?.rootViewController = TabBarViewController()
         window?.makeKeyAndVisible()
         window?.windowScene = windowScene
         
