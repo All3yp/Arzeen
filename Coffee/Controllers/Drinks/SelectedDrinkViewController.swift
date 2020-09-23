@@ -13,6 +13,7 @@ class SelectedDrinkViewController: UIViewController {
     
     lazy var selectedDrink: UIView = {
         let selectedDrink = SelectedDrinkView()
+        selectedDrink.delegateDrink = self
         return selectedDrink
     }()
     
@@ -32,4 +33,13 @@ class SelectedDrinkViewController: UIViewController {
         self.navigationController?.navigationBar.backgroundColor = .clear
         navigationController?.navigationBar.tintColor = UIColor(red: 0.98, green: 0.62, blue: 0.09, alpha: 1.00)
     }
+}
+
+extension SelectedDrinkViewController: DrinksDelegate {
+    func presentConfigDrink() {
+        let configDrinkController = ConfigDrinkViewController()
+        navigationController?.pushViewController(configDrinkController, animated: true)
+    }
+    
+    
 }

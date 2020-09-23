@@ -10,6 +10,9 @@ import UIKit
 
 class SelectedDrinkView: UIView {
     
+    
+    var delegateDrink: DrinksDelegate?
+    
     lazy var drinkImageView: ImageDrinkView = {
         let drinkImageView = ImageDrinkView()
         drinkImageView.translatesAutoresizingMaskIntoConstraints = false
@@ -74,6 +77,7 @@ class SelectedDrinkView: UIView {
         buttonPrepare.setTitle("Preparar", for: .normal)
         buttonPrepare.layer.cornerRadius = 15
         buttonPrepare.backgroundColor = UIColor(red: 0.98, green: 0.62, blue: 0.09, alpha: 1.00)
+        buttonPrepare.addTarget(self, action: #selector(presentConfigDrink), for: .touchUpInside)
         buttonPrepare.translatesAutoresizingMaskIntoConstraints = false
         return buttonPrepare
     }()
@@ -88,6 +92,10 @@ class SelectedDrinkView: UIView {
     
     override func layoutSubviews() {
         setUp()
+    }
+    
+    @objc func presentConfigDrink() {
+        delegateDrink?.presentConfigDrink()
     }
     
 }

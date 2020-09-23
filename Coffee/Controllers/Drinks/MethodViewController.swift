@@ -1,0 +1,18 @@
+//
+//  MethodViewController.swift
+//  Coffee
+//
+//  Created by Anderson Alencar on 23/09/20.
+//  Copyright © 2020 Alley Pereira. All rights reserved.
+//
+
+import UIKit
+
+class MethodViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+    }
+}

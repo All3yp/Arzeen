@@ -6,6 +6,8 @@ force_try:
 opt_in_rules:
 - empty_count
 - empty_string
+switch_case_alignment:
+    indented_cases: true # tira a warning s switch 
 excluded:
 - Carthage
 - Pods

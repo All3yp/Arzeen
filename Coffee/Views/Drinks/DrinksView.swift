@@ -77,5 +77,6 @@ extension DrinksView: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedDrink = SelectedDrinkViewController()
         delegateDrink?.navigationController?.pushViewController(selectedDrink, animated: true)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
