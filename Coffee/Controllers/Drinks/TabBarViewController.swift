@@ -17,7 +17,7 @@ class TabBarViewController: UITabBarController {
         
         // Do any additional setup after loading the view.
         
-        let mainVC = DrinksViewController()
+        let mainVC = DrinksViewController()//DrinksTableViewController()
         let navDrinksController = UINavigationController(rootViewController: mainVC)
         navDrinksController.navigationBar.barTintColor = UIColor(red: 0.16, green: 0.12, blue: 0.13, alpha: 1.00)
         navDrinksController.navigationBar.backgroundColor = UIColor(red: 0.16, green: 0.12, blue: 0.13, alpha: 1.00)
