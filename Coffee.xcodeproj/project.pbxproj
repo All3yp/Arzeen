@@ -112,7 +112,6 @@
 			isa = PBXGroup;
 			children = (
 				E252186F2513951300CE4862 /* Utils */,
-				18E405402510EA9C004387EE /* Model */,
 				18E405412510EAB1004387EE /* Views */,
 				18E405422510EABB004387EE /* Controllers */,
 				180355B12510E85C00EE830F /* AppDelegate.swift */,
@@ -131,13 +130,6 @@
 				180355CA2510E85D00EE830F /* Info.plist */,
 			);
 			path = CoffeeTests;
-			sourceTree = "<group>";
-		};
-		18E405402510EA9C004387EE /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		18E405412510EAB1004387EE /* Views */ = {
