@@ -20,6 +20,22 @@
 		1867455125141E5400DB2043 /* UiColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867455025141E5400DB2043 /* UiColor+Extension.swift */; };
 		186745562514EE3600DB2043 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186745552514EE3600DB2043 /* OnboardingCollectionViewCell.swift */; };
 		186745582514FAB800DB2043 /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186745572514FAB800DB2043 /* OnBoarding.swift */; };
+		E2AB182F251C16FF001176C5 /* ViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AB182E251C16FF001176C5 /* ViewCode.swift */; };
+		E2AB1835251C170A001176C5 /* DrinksProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AB1834251C170A001176C5 /* DrinksProtocol.swift */; };
+		E2AB183A251C174D001176C5 /* DrinksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AB1839251C174D001176C5 /* DrinksView.swift */; };
+		E2AB183E251C1759001176C5 /* DrinkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AB183D251C1759001176C5 /* DrinkTableViewCell.swift */; };
+		E2AB1844251C1801001176C5 /* SelectedDrinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AB1843251C1801001176C5 /* SelectedDrinkView.swift */; };
+		E2AB1848251C1852001176C5 /* ImageDrinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AB1847251C1852001176C5 /* ImageDrinkView.swift */; };
+		E2AB184C251C1872001176C5 /* HarmonizationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AB184B251C1872001176C5 /* HarmonizationCollectionViewCell.swift */; };
+		E2AB1850251C18B0001176C5 /* ConfigDrinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AB184F251C18B0001176C5 /* ConfigDrinkView.swift */; };
+		E2AB1854251C18CA001176C5 /* BackgroundConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AB1853251C18CA001176C5 /* BackgroundConfigView.swift */; };
+		E2AB1858251C18DE001176C5 /* ProcessCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AB1857251C18DE001176C5 /* ProcessCollectionViewCell.swift */; };
+		E2AB185C251C18F2001176C5 /* MeasureCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AB185B251C18F2001176C5 /* MeasureCollectionViewCell.swift */; };
+		E2AB1861251C1942001176C5 /* DrinksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AB1860251C1942001176C5 /* DrinksViewController.swift */; };
+		E2AB1865251C1956001176C5 /* SelectedDrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AB1864251C1956001176C5 /* SelectedDrinkViewController.swift */; };
+		E2AB1869251C196F001176C5 /* ConfigDrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AB1868251C196F001176C5 /* ConfigDrinkViewController.swift */; };
+		E2AB186D251C1982001176C5 /* MethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AB186C251C1982001176C5 /* MethodViewController.swift */; };
+		E2AB1871251C1998001176C5 /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AB1870251C1998001176C5 /* RightViewController.swift */; };
 		E62E92DF2514DC7E008D3C56 /* TableViewAutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62E92DE2514DC7E008D3C56 /* TableViewAutoLayout.swift */; };
 		E62E92E12514DE90008D3C56 /* SalesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62E92E02514DE90008D3C56 /* SalesTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -52,6 +68,22 @@
 		1867455025141E5400DB2043 /* UiColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiColor+Extension.swift"; sourceTree = "<group>"; };
 		186745552514EE3600DB2043 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		186745572514FAB800DB2043 /* OnBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding.swift; sourceTree = "<group>"; };
+		E2AB182E251C16FF001176C5 /* ViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode.swift; sourceTree = "<group>"; };
+		E2AB1834251C170A001176C5 /* DrinksProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksProtocol.swift; sourceTree = "<group>"; };
+		E2AB1839251C174D001176C5 /* DrinksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksView.swift; sourceTree = "<group>"; };
+		E2AB183D251C1759001176C5 /* DrinkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkTableViewCell.swift; sourceTree = "<group>"; };
+		E2AB1843251C1801001176C5 /* SelectedDrinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedDrinkView.swift; sourceTree = "<group>"; };
+		E2AB1847251C1852001176C5 /* ImageDrinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDrinkView.swift; sourceTree = "<group>"; };
+		E2AB184B251C1872001176C5 /* HarmonizationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarmonizationCollectionViewCell.swift; sourceTree = "<group>"; };
+		E2AB184F251C18B0001176C5 /* ConfigDrinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigDrinkView.swift; sourceTree = "<group>"; };
+		E2AB1853251C18CA001176C5 /* BackgroundConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundConfigView.swift; sourceTree = "<group>"; };
+		E2AB1857251C18DE001176C5 /* ProcessCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessCollectionViewCell.swift; sourceTree = "<group>"; };
+		E2AB185B251C18F2001176C5 /* MeasureCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureCollectionViewCell.swift; sourceTree = "<group>"; };
+		E2AB1860251C1942001176C5 /* DrinksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksViewController.swift; sourceTree = "<group>"; };
+		E2AB1864251C1956001176C5 /* SelectedDrinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedDrinkViewController.swift; sourceTree = "<group>"; };
+		E2AB1868251C196F001176C5 /* ConfigDrinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigDrinkViewController.swift; sourceTree = "<group>"; };
+		E2AB186C251C1982001176C5 /* MethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodViewController.swift; sourceTree = "<group>"; };
+		E2AB1870251C1998001176C5 /* RightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightViewController.swift; sourceTree = "<group>"; };
 		E62E92DE2514DC7E008D3C56 /* TableViewAutoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewAutoLayout.swift; sourceTree = "<group>"; };
 		E62E92E02514DE90008D3C56 /* SalesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,6 +127,7 @@
 		180355B02510E85C00EE830F /* Coffee */ = {
 			isa = PBXGroup;
 			children = (
+				E2AB182D251C16EE001176C5 /* Utils */,
 				18E405422510EABB004387EE /* Controllers */,
 				18E405412510EAB1004387EE /* Views */,
 				18E405402510EA9C004387EE /* Model */,
@@ -127,6 +160,7 @@
 		18E405412510EAB1004387EE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E2AB1838251C1730001176C5 /* Drinks */,
 				186745552514EE3600DB2043 /* OnboardingCollectionViewCell.swift */,
 				180355BC2510E85D00EE830F /* LaunchScreen.storyboard */,
 				E62E92E02514DE90008D3C56 /* SalesTableViewCell.swift */,
@@ -138,6 +172,7 @@
 		18E405422510EABB004387EE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E2AB185F251C1932001176C5 /* Drinks */,
 				180355B52510E85C00EE830F /* ViewController.swift */,
 				1867454725124C1900DB2043 /* LeftViewController.swift */,
 				1867454925124C2F00DB2043 /* SalesViewController.swift */,
@@ -145,6 +180,59 @@
 				1867454E2513AF2900DB2043 /* CollectionOnboardViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E2AB182D251C16EE001176C5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E2AB182E251C16FF001176C5 /* ViewCode.swift */,
+				E2AB1834251C170A001176C5 /* DrinksProtocol.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E2AB1838251C1730001176C5 /* Drinks */ = {
+			isa = PBXGroup;
+			children = (
+				E2AB1841251C17D4001176C5 /* SelectedDrink */,
+				E2AB1842251C17E3001176C5 /* ConfigDrink */,
+				E2AB1839251C174D001176C5 /* DrinksView.swift */,
+				E2AB183D251C1759001176C5 /* DrinkTableViewCell.swift */,
+			);
+			path = Drinks;
+			sourceTree = "<group>";
+		};
+		E2AB1841251C17D4001176C5 /* SelectedDrink */ = {
+			isa = PBXGroup;
+			children = (
+				E2AB1843251C1801001176C5 /* SelectedDrinkView.swift */,
+				E2AB1847251C1852001176C5 /* ImageDrinkView.swift */,
+				E2AB184B251C1872001176C5 /* HarmonizationCollectionViewCell.swift */,
+			);
+			path = SelectedDrink;
+			sourceTree = "<group>";
+		};
+		E2AB1842251C17E3001176C5 /* ConfigDrink */ = {
+			isa = PBXGroup;
+			children = (
+				E2AB184F251C18B0001176C5 /* ConfigDrinkView.swift */,
+				E2AB1853251C18CA001176C5 /* BackgroundConfigView.swift */,
+				E2AB1857251C18DE001176C5 /* ProcessCollectionViewCell.swift */,
+				E2AB185B251C18F2001176C5 /* MeasureCollectionViewCell.swift */,
+			);
+			path = ConfigDrink;
+			sourceTree = "<group>";
+		};
+		E2AB185F251C1932001176C5 /* Drinks */ = {
+			isa = PBXGroup;
+			children = (
+				E2AB1860251C1942001176C5 /* DrinksViewController.swift */,
+				E2AB1864251C1956001176C5 /* SelectedDrinkViewController.swift */,
+				E2AB1868251C196F001176C5 /* ConfigDrinkViewController.swift */,
+				E2AB186C251C1982001176C5 /* MethodViewController.swift */,
+				E2AB1870251C1998001176C5 /* RightViewController.swift */,
+			);
+			path = Drinks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,17 +357,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				E62E92E12514DE90008D3C56 /* SalesTableViewCell.swift in Sources */,
+				E2AB1871251C1998001176C5 /* RightViewController.swift in Sources */,
+				E2AB1850251C18B0001176C5 /* ConfigDrinkView.swift in Sources */,
 				180355B62510E85C00EE830F /* ViewController.swift in Sources */,
 				1867454825124C1900DB2043 /* LeftViewController.swift in Sources */,
+				E2AB1848251C1852001176C5 /* ImageDrinkView.swift in Sources */,
 				1867454A25124C2F00DB2043 /* SalesViewController.swift in Sources */,
 				1867454C25124CEC00DB2043 /* TabBarViewController.swift in Sources */,
+				E2AB1869251C196F001176C5 /* ConfigDrinkViewController.swift in Sources */,
+				E2AB1854251C18CA001176C5 /* BackgroundConfigView.swift in Sources */,
+				E2AB186D251C1982001176C5 /* MethodViewController.swift in Sources */,
 				1867454F2513AF2900DB2043 /* CollectionOnboardViewController.swift in Sources */,
+				E2AB1865251C1956001176C5 /* SelectedDrinkViewController.swift in Sources */,
+				E2AB183A251C174D001176C5 /* DrinksView.swift in Sources */,
 				186745582514FAB800DB2043 /* OnBoarding.swift in Sources */,
 				180355B22510E85C00EE830F /* AppDelegate.swift in Sources */,
+				E2AB1858251C18DE001176C5 /* ProcessCollectionViewCell.swift in Sources */,
 				180355B42510E85C00EE830F /* SceneDelegate.swift in Sources */,
 				186745562514EE3600DB2043 /* OnboardingCollectionViewCell.swift in Sources */,
+				E2AB1861251C1942001176C5 /* DrinksViewController.swift in Sources */,
+				E2AB1844251C1801001176C5 /* SelectedDrinkView.swift in Sources */,
+				E2AB185C251C18F2001176C5 /* MeasureCollectionViewCell.swift in Sources */,
+				E2AB1835251C170A001176C5 /* DrinksProtocol.swift in Sources */,
 				1867455125141E5400DB2043 /* UiColor+Extension.swift in Sources */,
+				E2AB184C251C1872001176C5 /* HarmonizationCollectionViewCell.swift in Sources */,
 				E62E92DF2514DC7E008D3C56 /* TableViewAutoLayout.swift in Sources */,
+				E2AB183E251C1759001176C5 /* DrinkTableViewCell.swift in Sources */,
+				E2AB182F251C16FF001176C5 /* ViewCode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,7 +536,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4X8K6Z86C3;
+				DEVELOPMENT_TEAM = 3XAHB7RJJD;
 				INFOPLIST_FILE = Coffee/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,7 +554,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4X8K6Z86C3;
+				DEVELOPMENT_TEAM = 3XAHB7RJJD;
 				INFOPLIST_FILE = Coffee/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -1,19 +1,18 @@
 //
-//  LeftViewController.swift
+//  RightViewController.swift
 //  Coffee
 //
-//  Created by Alley Pereira on 16/09/20.
+//  Created by Anderson Alencar on 23/09/20.
 //  Copyright © 2020 Alley Pereira. All rights reserved.
 //
 
 import UIKit
 
-class LeftViewController: UIViewController {
+class RightViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
 }
