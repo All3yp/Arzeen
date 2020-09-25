@@ -15,4 +15,5 @@ extension UIColor {
     static var amareloEscuroCustomized = UIColor.init(named: "AmareloEscuroCustomized")
     static var amareloClaroCustomized = UIColor.init(named: "AmareloClaroCustomized")
     static var whiteColorCustomized = UIColor.init(named: "WhiteColorCustomized")
+    static var yellowGrainsCustomized = UIColor.init(named: "YellowGrainsCustomized")
 }

@@ -24,8 +24,10 @@ class TabBarViewController: UITabBarController {
         navDrinksController.navigationBar.isTranslucent = false
         mainVC.tabBarItem = UITabBarItem(title: "Cafés", image: UIImage(named: "xicaraCafe"), tag: 0)
         
-        let leftVC = LeftViewController()
-        leftVC.tabBarItem = UITabBarItem(title: "Grãos", image: UIImage(named: "graosCafe"), tag: 1)
+        let grainsVC = GrainsCollectionViewController()
+        let  navigationGrainsController = UINavigationController(rootViewController: grainsVC)
+        navigationGrainsController.navigationBar.prefersLargeTitles = true
+        grainsVC.tabBarItem = UITabBarItem(title: "Grãos", image: UIImage(named: "graosCafe"), tag: 1)
         
         let rightVC = SalesViewController()
         let navSalesController = UINavigationController()
@@ -39,11 +41,13 @@ class TabBarViewController: UITabBarController {
         navSalesController.pushViewController(rightVC, animated: true)
         rightVC.tabBarItem = UITabBarItem(title: "Locais de Venda", image: UIImage(named: "sacolaCafe"), tag: 2)
         
-        let tabBarList = [navDrinksController, leftVC, navSalesController]
+        let tabBarList = [navDrinksController, navigationGrainsController, navSalesController]
         
         viewControllers = tabBarList
         
         tabBar.backgroundColor = .globalMarromColor
         tabBar.tintColor = .amareloEscuroCustomized
+        
+        self.selectedIndex = 1
     }
 }
