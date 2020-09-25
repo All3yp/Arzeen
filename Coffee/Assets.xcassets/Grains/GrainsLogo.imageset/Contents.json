@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "GrainsLogo.png",
+      "filename" : "Navigation Bar Background.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "GrainsLogo@2x.png",
+      "filename" : "Navigation Bar Background@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "GrainsLogo@3x.png",
+      "filename" : "Navigation Bar Background@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
