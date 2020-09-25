@@ -13,7 +13,10 @@
 		180355BB2510E85D00EE830F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180355BA2510E85D00EE830F /* Assets.xcassets */; };
 		180355BE2510E85D00EE830F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180355BC2510E85D00EE830F /* LaunchScreen.storyboard */; };
 		180355C92510E85D00EE830F /* CoffeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180355C82510E85D00EE830F /* CoffeeTests.swift */; };
-		1867454825124C1900DB2043 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867454725124C1900DB2043 /* LeftViewController.swift */; };
+		18184585251CE4B300346F71 /* GrainsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18184584251CE4B300346F71 /* GrainsCollectionViewController.swift */; };
+		1818458B251CE51E00346F71 /* GrainsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1818458A251CE51E00346F71 /* GrainsModel.swift */; };
+		1818458F251CE54300346F71 /* GrainsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1818458E251CE54300346F71 /* GrainsCollectionViewCell.swift */; };
+		18184593251CE67B00346F71 /* SliderGrainsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18184592251CE67B00346F71 /* SliderGrainsView.swift */; };
 		1867454A25124C2F00DB2043 /* SalesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867454925124C2F00DB2043 /* SalesViewController.swift */; };
 		1867454C25124CEC00DB2043 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867454B25124CEC00DB2043 /* TabBarViewController.swift */; };
 		1867454F2513AF2900DB2043 /* CollectionOnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867454E2513AF2900DB2043 /* CollectionOnboardViewController.swift */; };
@@ -61,7 +64,10 @@
 		180355C42510E85D00EE830F /* CoffeeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoffeeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		180355C82510E85D00EE830F /* CoffeeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeTests.swift; sourceTree = "<group>"; };
 		180355CA2510E85D00EE830F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1867454725124C1900DB2043 /* LeftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
+		18184584251CE4B300346F71 /* GrainsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrainsCollectionViewController.swift; sourceTree = "<group>"; };
+		1818458A251CE51E00346F71 /* GrainsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrainsModel.swift; sourceTree = "<group>"; };
+		1818458E251CE54300346F71 /* GrainsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrainsCollectionViewCell.swift; sourceTree = "<group>"; };
+		18184592251CE67B00346F71 /* SliderGrainsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderGrainsView.swift; sourceTree = "<group>"; };
 		1867454925124C2F00DB2043 /* SalesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesViewController.swift; sourceTree = "<group>"; };
 		1867454B25124CEC00DB2043 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		1867454E2513AF2900DB2043 /* CollectionOnboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionOnboardViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +154,17 @@
 			path = CoffeeTests;
 			sourceTree = "<group>";
 		};
+		18184583251CE48900346F71 /* Grains */ = {
+			isa = PBXGroup;
+			children = (
+				18184584251CE4B300346F71 /* GrainsCollectionViewController.swift */,
+				1818458A251CE51E00346F71 /* GrainsModel.swift */,
+				1818458E251CE54300346F71 /* GrainsCollectionViewCell.swift */,
+				18184592251CE67B00346F71 /* SliderGrainsView.swift */,
+			);
+			path = Grains;
+			sourceTree = "<group>";
+		};
 		18E405402510EA9C004387EE /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,9 +189,9 @@
 		18E405422510EABB004387EE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				18184583251CE48900346F71 /* Grains */,
 				E2AB185F251C1932001176C5 /* Drinks */,
 				180355B52510E85C00EE830F /* ViewController.swift */,
-				1867454725124C1900DB2043 /* LeftViewController.swift */,
 				1867454925124C2F00DB2043 /* SalesViewController.swift */,
 				1867454B25124CEC00DB2043 /* TabBarViewController.swift */,
 				1867454E2513AF2900DB2043 /* CollectionOnboardViewController.swift */,
@@ -360,7 +377,7 @@
 				E2AB1871251C1998001176C5 /* RightViewController.swift in Sources */,
 				E2AB1850251C18B0001176C5 /* ConfigDrinkView.swift in Sources */,
 				180355B62510E85C00EE830F /* ViewController.swift in Sources */,
-				1867454825124C1900DB2043 /* LeftViewController.swift in Sources */,
+				1818458B251CE51E00346F71 /* GrainsModel.swift in Sources */,
 				E2AB1848251C1852001176C5 /* ImageDrinkView.swift in Sources */,
 				1867454A25124C2F00DB2043 /* SalesViewController.swift in Sources */,
 				1867454C25124CEC00DB2043 /* TabBarViewController.swift in Sources */,
@@ -374,10 +391,13 @@
 				180355B22510E85C00EE830F /* AppDelegate.swift in Sources */,
 				E2AB1858251C18DE001176C5 /* ProcessCollectionViewCell.swift in Sources */,
 				180355B42510E85C00EE830F /* SceneDelegate.swift in Sources */,
+				18184593251CE67B00346F71 /* SliderGrainsView.swift in Sources */,
+				1818458F251CE54300346F71 /* GrainsCollectionViewCell.swift in Sources */,
 				186745562514EE3600DB2043 /* OnboardingCollectionViewCell.swift in Sources */,
 				E2AB1861251C1942001176C5 /* DrinksViewController.swift in Sources */,
 				E2AB1844251C1801001176C5 /* SelectedDrinkView.swift in Sources */,
 				E2AB185C251C18F2001176C5 /* MeasureCollectionViewCell.swift in Sources */,
+				18184585251CE4B300346F71 /* GrainsCollectionViewController.swift in Sources */,
 				E2AB1835251C170A001176C5 /* DrinksProtocol.swift in Sources */,
 				1867455125141E5400DB2043 /* UiColor+Extension.swift in Sources */,
 				E2AB184C251C1872001176C5 /* HarmonizationCollectionViewCell.swift in Sources */,
