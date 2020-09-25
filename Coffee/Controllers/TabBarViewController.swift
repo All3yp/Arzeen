@@ -48,6 +48,7 @@ class TabBarViewController: UITabBarController {
         tabBar.backgroundColor = .globalMarromColor
         tabBar.tintColor = .amareloEscuroCustomized
         
-        self.selectedIndex = 1
+        //Testar tela
+//        self.selectedIndex = 1
     }
 }
