@@ -13,13 +13,14 @@
 		180355BB2510E85D00EE830F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180355BA2510E85D00EE830F /* Assets.xcassets */; };
 		180355BE2510E85D00EE830F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180355BC2510E85D00EE830F /* LaunchScreen.storyboard */; };
 		180355C92510E85D00EE830F /* CoffeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180355C82510E85D00EE830F /* CoffeeTests.swift */; };
-		1867454825124C1900DB2043 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867454725124C1900DB2043 /* LeftViewController.swift */; };
+		1867454825124C1900DB2043 /* GrainsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867454725124C1900DB2043 /* GrainsViewController.swift */; };
 		1867454A25124C2F00DB2043 /* SalesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867454925124C2F00DB2043 /* SalesViewController.swift */; };
 		1867454C25124CEC00DB2043 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867454B25124CEC00DB2043 /* TabBarViewController.swift */; };
 		1867454F2513AF2900DB2043 /* CollectionOnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867454E2513AF2900DB2043 /* CollectionOnboardViewController.swift */; };
 		1867455125141E5400DB2043 /* UiColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867455025141E5400DB2043 /* UiColor+Extension.swift */; };
 		186745562514EE3600DB2043 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186745552514EE3600DB2043 /* OnboardingCollectionViewCell.swift */; };
 		186745582514FAB800DB2043 /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186745572514FAB800DB2043 /* OnBoarding.swift */; };
+		1AF1B22D251B7B6F00509FD1 /* GrainsDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF1B22C251B7B6F00509FD1 /* GrainsDetails.swift */; };
 		E62E92DF2514DC7E008D3C56 /* TableViewAutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62E92DE2514DC7E008D3C56 /* TableViewAutoLayout.swift */; };
 		E62E92E12514DE90008D3C56 /* SalesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62E92E02514DE90008D3C56 /* SalesTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -45,13 +46,14 @@
 		180355C42510E85D00EE830F /* CoffeeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoffeeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		180355C82510E85D00EE830F /* CoffeeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeTests.swift; sourceTree = "<group>"; };
 		180355CA2510E85D00EE830F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1867454725124C1900DB2043 /* LeftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
+		1867454725124C1900DB2043 /* GrainsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrainsViewController.swift; sourceTree = "<group>"; };
 		1867454925124C2F00DB2043 /* SalesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesViewController.swift; sourceTree = "<group>"; };
 		1867454B25124CEC00DB2043 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		1867454E2513AF2900DB2043 /* CollectionOnboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionOnboardViewController.swift; sourceTree = "<group>"; };
 		1867455025141E5400DB2043 /* UiColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiColor+Extension.swift"; sourceTree = "<group>"; };
 		186745552514EE3600DB2043 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		186745572514FAB800DB2043 /* OnBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding.swift; sourceTree = "<group>"; };
+		1AF1B22C251B7B6F00509FD1 /* GrainsDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrainsDetails.swift; sourceTree = "<group>"; };
 		E62E92DE2514DC7E008D3C56 /* TableViewAutoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewAutoLayout.swift; sourceTree = "<group>"; };
 		E62E92E02514DE90008D3C56 /* SalesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,6 +133,7 @@
 				180355BC2510E85D00EE830F /* LaunchScreen.storyboard */,
 				E62E92E02514DE90008D3C56 /* SalesTableViewCell.swift */,
 				E62E92DE2514DC7E008D3C56 /* TableViewAutoLayout.swift */,
+				1AF1B22C251B7B6F00509FD1 /* GrainsDetails.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -139,7 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				180355B52510E85C00EE830F /* ViewController.swift */,
-				1867454725124C1900DB2043 /* LeftViewController.swift */,
+				1867454725124C1900DB2043 /* GrainsViewController.swift */,
 				1867454925124C2F00DB2043 /* SalesViewController.swift */,
 				1867454B25124CEC00DB2043 /* TabBarViewController.swift */,
 				1867454E2513AF2900DB2043 /* CollectionOnboardViewController.swift */,
@@ -270,12 +273,13 @@
 			files = (
 				E62E92E12514DE90008D3C56 /* SalesTableViewCell.swift in Sources */,
 				180355B62510E85C00EE830F /* ViewController.swift in Sources */,
-				1867454825124C1900DB2043 /* LeftViewController.swift in Sources */,
+				1867454825124C1900DB2043 /* GrainsViewController.swift in Sources */,
 				1867454A25124C2F00DB2043 /* SalesViewController.swift in Sources */,
 				1867454C25124CEC00DB2043 /* TabBarViewController.swift in Sources */,
 				1867454F2513AF2900DB2043 /* CollectionOnboardViewController.swift in Sources */,
 				186745582514FAB800DB2043 /* OnBoarding.swift in Sources */,
 				180355B22510E85C00EE830F /* AppDelegate.swift in Sources */,
+				1AF1B22D251B7B6F00509FD1 /* GrainsDetails.swift in Sources */,
 				180355B42510E85C00EE830F /* SceneDelegate.swift in Sources */,
 				186745562514EE3600DB2043 /* OnboardingCollectionViewCell.swift in Sources */,
 				1867455125141E5400DB2043 /* UiColor+Extension.swift in Sources */,

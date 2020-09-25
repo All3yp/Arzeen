@@ -21,7 +21,7 @@ class TabBarViewController: UITabBarController {
         
         mainVC.tabBarItem = UITabBarItem(title: "Cafés", image: UIImage(named: "xicaraCafe"), tag: 0)
         
-        let leftVC = LeftViewController()
+        let leftVC = GrainsViewController()
         
         leftVC.tabBarItem = UITabBarItem(title: "Grãos", image: UIImage(named: "graosCafe"), tag: 1)
         
