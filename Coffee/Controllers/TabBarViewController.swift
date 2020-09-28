@@ -13,18 +13,22 @@ class TabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor.globalMarromColor
-        //Pq não fica da mesma cor da nav bar?
+        view.backgroundColor = .globalMarromColor
+
         
-        // Do any additional setup after loading the view.
-        
-        let mainVC = ViewController()
-        
+        let mainVC = DrinksViewController()
+        let navDrinksController = UINavigationController(rootViewController: mainVC)
+        navDrinksController.navigationBar.barTintColor = UIColor(red: 0.16, green: 0.12, blue: 0.13, alpha: 1.00)
+        navDrinksController.navigationBar.backgroundColor = UIColor(red: 0.16, green: 0.12, blue: 0.13, alpha: 1.00)
+
+        navDrinksController.navigationBar.prefersLargeTitles = true
+        navDrinksController.navigationBar.isTranslucent = false
         mainVC.tabBarItem = UITabBarItem(title: "Cafés", image: UIImage(named: "xicaraCafe"), tag: 0)
         
-        let leftVC = LeftViewController()
-        
-        leftVC.tabBarItem = UITabBarItem(title: "Grãos", image: UIImage(named: "graosCafe"), tag: 1)
+        let grainsVC = GrainsCollectionViewController()
+        let  navigationGrainsController = UINavigationController(rootViewController: grainsVC)
+        navigationGrainsController.navigationBar.prefersLargeTitles = true
+        grainsVC.tabBarItem = UITabBarItem(title: "Grãos", image: UIImage(named: "graosCafe"), tag: 1)
         
         let rightVC = SalesViewController()
         let navSalesController = UINavigationController()
@@ -40,13 +44,14 @@ class TabBarViewController: UITabBarController {
         navSalesController.pushViewController(rightVC, animated: true)
         rightVC.tabBarItem = UITabBarItem(title: "Locais de Venda", image: UIImage(named: "sacolaCafe"), tag: 2)
         
-        let tabBarList = [mainVC, leftVC, navSalesController]
+        let tabBarList = [navDrinksController, navigationGrainsController, navSalesController]
         
         viewControllers = tabBarList
         
-        tabBar.backgroundColor = .clear
-        tabBar.barTintColor = UIColor.globalMarromColor
-        tabBar.tintColor = UIColor.amareloEscuroCustomized
+        tabBar.backgroundColor = .globalMarromColor
+        tabBar.tintColor = .amareloEscuroCustomized
         
+        //Testar tela
+//        self.selectedIndex = 1
     }
 }
