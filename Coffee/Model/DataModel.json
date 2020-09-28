@@ -1,0 +1,24 @@
+{
+    "listOfStores": [
+    {
+    "name": "Mercado do Café",
+    "location": "Rua A, Fortaleza",
+    "latitude":  -3.731401,
+    "longitude": -38.490090,
+    "grain": {
+    "name": "Catuaí",
+    "species": "Arabica",
+    "origin": "Minas Gerais",
+    "cultivation": "A altitude está amplamente relacionada à qualidade do grão produzido, ou seja, quanto mais alta for a altitude da lavoura, maior será a qualidade do grão.",
+    "flavor": "Possui, em média, 50% menos cafeína, mas possui um teor maior de açúcares, responsáveis pela complexidade de sabores dessa variedade.",
+    "varietyOfGrain": "Variedade de café Arábica",
+    "details": {
+    "sensoryProfile": "Melado de Cana, Mirtilo, Pralinê",
+    "altitude": "1200m",
+    "body": 3,
+    "acidity": 4
+    }
+    }
+    }
+    ]
+}

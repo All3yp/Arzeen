@@ -13,7 +13,8 @@ class TabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor.globalMarromColor
+        //Pq não fica da mesma cor da nav bar?
         
         // Do any additional setup after loading the view.
         
@@ -27,9 +28,11 @@ class TabBarViewController: UITabBarController {
         
         let rightVC = SalesViewController()
         let navSalesController = UINavigationController()
-        navSalesController.navigationBar.barTintColor = UIColor.textColor
-        navSalesController.navigationBar.backgroundColor = UIColor.navigationColor
-        let attrs = [ NSAttributedString.Key.foregroundColor: UIColor.textColor ]
+        // mudando a status bar color
+        navSalesController.navigationBar.barStyle  = .black
+        navSalesController.navigationBar.barTintColor = UIColor.whiteColorCustomized
+        navSalesController.navigationBar.backgroundColor = UIColor.globalMarromColor
+        let attrs = [ NSAttributedString.Key.foregroundColor: UIColor.whiteColorCustomized ]
         navSalesController.navigationBar.largeTitleTextAttributes = attrs as [NSAttributedString.Key: Any]
         
         navSalesController.navigationBar.prefersLargeTitles = true
@@ -42,6 +45,8 @@ class TabBarViewController: UITabBarController {
         viewControllers = tabBarList
         
         tabBar.backgroundColor = .clear
+        tabBar.barTintColor = UIColor.globalMarromColor
+        tabBar.tintColor = UIColor.amareloEscuroCustomized
         
     }
 }

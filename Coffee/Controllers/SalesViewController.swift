@@ -9,7 +9,7 @@
 import UIKit
 
 class SalesViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Locais de Venda"
@@ -30,8 +30,15 @@ class SalesViewController: UIViewController {
         tableView.rowHeight = 139
         tableView.tableAutoLayout(to: view)
         tableView.separatorStyle = .none
+        
         return tableView
     }()
+    
+    @objc private func pressedStoreButton(sender: UIButton) {
+        let destination = SelectedStoreViewController()
+        present(destination, animated: true)
+    }
+    
 }
 
 extension SalesViewController {
@@ -51,6 +58,7 @@ extension SalesViewController {
 extension SalesViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
         return 6
     }
     
@@ -62,13 +70,17 @@ extension SalesViewController: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell") as? SalesTableViewCell else {
             return SalesTableViewCell()
         }
-                
+        
+        cell.storeButton.addTarget(self, action: #selector(pressedStoreButton), for: .touchUpInside)
+        //        cell.storeButton.tag = section
+        cell.store2Button.addTarget(self, action: #selector(pressedStoreButton), for: .touchUpInside)
+        
         cell.selectionStyle = .none
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // Por o código quando a celula for selecionada
+        //Set code for a selected row
     }
     
 }
