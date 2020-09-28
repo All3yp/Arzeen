@@ -9,6 +9,8 @@
 import UIKit
 
 class ConfigDrinkView: UIView {
+    
+    weak var configDelegate: ConfigDrinkDelegate?
 
     lazy var drinkImageView: UIImageView = {
         let drinkImageView = UIImageView()
@@ -117,6 +119,10 @@ class ConfigDrinkView: UIView {
         setUp()
     }
     
+    @objc func presentMethod() {
+        configDelegate?.presentMethodDrink()
+    }
+    
 }
 
 extension ConfigDrinkView: ViewCode {
@@ -206,6 +212,9 @@ extension ConfigDrinkView: UICollectionViewDelegate, UICollectionViewDataSource 
             case self.processCollection:
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "processCell", for: indexPath) as! ProcessCollectionViewCell
                 cell.configCell(processIcon: UIImage(named: "expresso")!, nameProcess: "Hario16")
+                let longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(presentMethod))
+                longPressGesture.minimumPressDuration = 1.0 // 1 second press
+                cell.addGestureRecognizer(longPressGesture)
                 return cell
             default:
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "measureCell", for: indexPath) as! MeasureCollectionViewCell
