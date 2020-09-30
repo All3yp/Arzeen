@@ -1,119 +1,119 @@
 {
-	"listOfStores": [{
-			"name": "Amika Coffeehouse",
-			"location": "R. Ana Bilhar, 1136B - Meireles, Fortaleza - CE, 60160-110",
-			"latitude": -3.731385,
-			"longitude": -38.490066,
-			"grain": {
-				"imageName": "Mogiana",
-				"name": "Acaiá",
-				"nameOfCoffee": "Mogiana",
-				"state": "São Paulo",
-				"country": "Brasil",
-				"finalization": 5.0,
-				"contrast": 5.0,
-				"torra": 3.0,
-				"species": "Coffea Arabica",
-				"origin": "No Brasil, o Acaiá tem origem em seleções individuais da variedade Mundo Novo. Ou seja, uma mutação natural do Mundo Novo (que é um híbrido Typica e Bourbon).",
-				"cultivation": "Variedade que prospera melhor em cultivo de altitude elevada, a partir dos 800 metros em relação ao nível do mar. A planta se adaptou bem ao clima brasileiro e às condições de crescimento encontradas no país.",
-				"flavor": "O Acaiá costuma agradar aos apreciadores que preferem um café suave, com notas frutadas. Muitos abrem mão de adoçar a bebida, já que o varietal tem sabor achocolatado e acidez média.",
-				"varietyOfGrain": "Variedade de café Acaiá",
-				"originOfGrain": "SVale da Grama, Média Mogiana",
-				"details": {
-					"sensoryProfile": "Chocolate, Nozes e Especiarias",
-					"altitude": "1050m",
-					"body": 2.5,
-					"acidity": 2.5
-				}
-			}
-		},
+    "listOfStores": [{
+            "name": "Amika Coffeehouse",
+            "location": "R. Ana Bilhar, 1136B - Meireles, Fortaleza - CE, 60160-110",
+            "latitude": -3.731385,
+            "longitude": -38.490066,
+            "grain": {
+                "imageName": "Mogiana",
+                "name": "Acaiá",
+                "nameOfCoffee": "Mogiana",
+                "state": "São Paulo",
+                "country": "Brasil",
+                "finalization": 5.0,
+                "contrast": 5.0,
+                "torra": 3.0,
+                "species": "Coffea Arabica",
+                "origin": "No Brasil, o Acaiá tem origem em seleções individuais da variedade Mundo Novo. Ou seja, uma mutação natural do Mundo Novo (que é um híbrido Typica e Bourbon).",
+                "cultivation": "Variedade que prospera melhor em cultivo de altitude elevada, a partir dos 800 metros em relação ao nível do mar. A planta se adaptou bem ao clima brasileiro e às condições de crescimento encontradas no país.",
+                "flavor": "O Acaiá costuma agradar aos apreciadores que preferem um café suave, com notas frutadas. Muitos abrem mão de adoçar a bebida, já que o varietal tem sabor achocolatado e acidez média.",
+                "varietyOfGrain": "Variedade de café Acaiá",
+                "originOfGrain": "SVale da Grama, Média Mogiana",
+                "details": {
+                    "sensoryProfile": "Chocolate, Nozes e Especiarias",
+                    "altitude": "1050m",
+                    "body": 2.5,
+                    "acidity": 2.5
+                }
+            }
+        },
 
-		{
-			"name": "Amika Coffeehouse",
-			"location": "R. Ana Bilhar, 1136B - Meireles, Fortaleza - CE, 60160-110",
-			"latitude": -3.731385,
-			"longitude": -38.490066,
-			"grain": {
-				"imageName": "Cerrado Mineiro",
-				"name": "Mundo Novo",
-				"nameOfCoffee": "Cerrado Mineiro",
-				"state": "Minas Gerais",
-				"country": "Brasil",
-				"finalization": 8.0,
-				"contrast": 8.25,
-				"torra": 5.0,
-				"species": "Coffea Arabica",
-				"origin": "Resultante de um cruzamento natural entre os cultivares Sumatra e Bourbon Vermelho, o Mundo Novo foi descoberto no município paulista de Mineiros do Tietê, em 1952.",
-				"cultivation": "As plantações acima de 800 metros de altitude produzem os melhores cafés, mas o Novo Mundo se adapta bem a variações climáticas. Por isso, ele está presente em todas as regiões cafeeiras do Brasil, inclusive no Cerrado.",
-				"flavor": "O Mundo Novo tem sabor doce e marcante. Corpo médio, perfume intenso de torra e média acidez. Possui aromas de caramelo e também de chocolate ao leite.",
-				"varietyOfGrain": "Variedade de café Mundo Novo",
-				"originOfGrain": "Patrocínio, Minas Gerais",
-				"details": {
-					"sensoryProfile": "Chocolate e florais. Doçura de caramelo e acidez cítrica média",
-					"altitude": "1200m",
-					"body": 8.0,
-					"acidity": 8.0
-				}
-			}
-		},
+        {
+            "name": "Amika Coffeehouse",
+            "location": "R. Ana Bilhar, 1136B - Meireles, Fortaleza - CE, 60160-110",
+            "latitude": -3.731385,
+            "longitude": -38.490066,
+            "grain": {
+                "imageName": "Cerrado Mineiro",
+                "name": "Mundo Novo",
+                "nameOfCoffee": "Cerrado Mineiro",
+                "state": "Minas Gerais",
+                "country": "Brasil",
+                "finalization": 8.0,
+                "contrast": 8.25,
+                "torra": 5.0,
+                "species": "Coffea Arabica",
+                "origin": "Resultante de um cruzamento natural entre os cultivares Sumatra e Bourbon Vermelho, o Mundo Novo foi descoberto no município paulista de Mineiros do Tietê, em 1952.",
+                "cultivation": "As plantações acima de 800 metros de altitude produzem os melhores cafés, mas o Novo Mundo se adapta bem a variações climáticas. Por isso, ele está presente em todas as regiões cafeeiras do Brasil, inclusive no Cerrado.",
+                "flavor": "O Mundo Novo tem sabor doce e marcante. Corpo médio, perfume intenso de torra e média acidez. Possui aromas de caramelo e também de chocolate ao leite.",
+                "varietyOfGrain": "Variedade de café Mundo Novo",
+                "originOfGrain": "Patrocínio, Minas Gerais",
+                "details": {
+                    "sensoryProfile": "Chocolate e florais. Doçura de caramelo e acidez cítrica média",
+                    "altitude": "1200m",
+                    "body": 8.0,
+                    "acidity": 8.0
+                }
+            }
+        },
 
-		{
-			"name": "Amika Coffeehouse",
-			"location": "R. Ana Bilhar, 1136B - Meireles, Fortaleza - CE, 60160-110",
-			"latitude": -3.731385,
-			"longitude": -38.490066,
-			"grain": {
-				"imageName": "Serra do Salitre",
-				"name": "Catuai Amarelo",
-				"nameOfCoffee": "Serra do Salitre",
-				"state": "Minas Gerais",
-				"country": "Brasil",
-				"finalization": 8.0,
-				"contrast": 8.25,
-				"torra": 5.0,
-				"species": "Coffea Arabica",
-				"origin": "A história do catuaí, considerado o primeiro cultivar arábica produzido pelo homem, começou com o geneticista Alcides de Carvalho que cruzou, em 1949, duas variedades do tipo arábica: Mundo Novo e Caturra.",
-				"cultivation": "O Catuai é excelente opção para o cultivo de altitude. Com características como rusticidade, manejo eficiente e alta produtividade, tornou-se uma espécie  super relevante no mercado cafeeiro nacional. Não por acaso, o híbrido está presente em quase metade das lavouras cafeeiras do país.",
-				"flavor": "O grão é apreciado por aromas e notas delicadas. Leve e suave, cuja personalidade aparece principalmente na acidez equilibrada e na doçura natural.",
-				"varietyOfGrain": "Variedade de café Catuai Amarelo",
-				"originOfGrain": "Serra do Salitre, Minas Gerais",
-				"details": {
-					"sensoryProfile": "Chocolate ao leite, iogurte e amarena",
-					"altitude": "980m",
-					"body": 6.0,
-					"acidity": 5.0
-				}
-			}
-		},
+        {
+            "name": "Amika Coffeehouse",
+            "location": "R. Ana Bilhar, 1136B - Meireles, Fortaleza - CE, 60160-110",
+            "latitude": -3.731385,
+            "longitude": -38.490066,
+            "grain": {
+                "imageName": "Serra do Salitre",
+                "name": "Catuai Amarelo",
+                "nameOfCoffee": "Serra do Salitre",
+                "state": "Minas Gerais",
+                "country": "Brasil",
+                "finalization": 8.0,
+                "contrast": 8.25,
+                "torra": 5.0,
+                "species": "Coffea Arabica",
+                "origin": "A história do catuaí, considerado o primeiro cultivar arábica produzido pelo homem, começou com o geneticista Alcides de Carvalho que cruzou, em 1949, duas variedades do tipo arábica: Mundo Novo e Caturra.",
+                "cultivation": "O Catuai é excelente opção para o cultivo de altitude. Com características como rusticidade, manejo eficiente e alta produtividade, tornou-se uma espécie  super relevante no mercado cafeeiro nacional. Não por acaso, o híbrido está presente em quase metade das lavouras cafeeiras do país.",
+                "flavor": "O grão é apreciado por aromas e notas delicadas. Leve e suave, cuja personalidade aparece principalmente na acidez equilibrada e na doçura natural.",
+                "varietyOfGrain": "Variedade de café Catuai Amarelo",
+                "originOfGrain": "Serra do Salitre, Minas Gerais",
+                "details": {
+                    "sensoryProfile": "Chocolate ao leite, iogurte e amarena",
+                    "altitude": "980m",
+                    "body": 6.0,
+                    "acidity": 5.0
+                }
+            }
+        },
 
-		{
-			"name": "Descoberta Café",
-			"location": "Rua Waldery Uchôa, 3 - Benfica, Fortaleza - CE, 60020-110",
-			"latitude": -3.741928,
-			"longitude": -38.536919,
-			"grain": {
-				"imageName": "Serra do Salitre",
-				"name": "Obatã Amarelo",
-				"nameOfCoffee": "Obatã Amarelo",
-				"state": "São Paulo",
-				"country": "Brasil",
-				"finalization": 4.0,
-				"contrast": 3.0,
-				"torra": 5.0,
-				"species": "Coffea Arabica",
-				"origin": "A origem do Obatã Amarelo decorre de provável cruzamento do Obatã com o Catuaí Amarelo realizado na Cooperativa dos Cafeicultores da Região de Garça, Estado de São Paulo.",
-				"cultivation": "O Obatã Amarelo possui cultivo de altitude. Indicado, preferencialmente, para plantios adensados ou em renque.",
-				"flavor": "O grão é apreciado por possuir notas deliciosas de chocolate e caramelo.",
-				"varietyOfGrain": "Variedade de café Catuai Amarelo",
-				"originOfGrain": "São Sebastião da Grama, São Paulo",
-				"details": {
-					"sensoryProfile": "Chocolate e caramelo",
-					"altitude": "1100m",
-					"body": 4.0,
-					"acidity": 3.0
-				}
-			}
-		}
+        {
+            "name": "Descoberta Café",
+            "location": "Rua Waldery Uchôa, 3 - Benfica, Fortaleza - CE, 60020-110",
+            "latitude": -3.741928,
+            "longitude": -38.536919,
+            "grain": {
+                "imageName": "Serra do Salitre",
+                "name": "Obatã Amarelo",
+                "nameOfCoffee": "Obatã Amarelo",
+                "state": "São Paulo",
+                "country": "Brasil",
+                "finalization": 4.0,
+                "contrast": 3.0,
+                "torra": 5.0,
+                "species": "Coffea Arabica",
+                "origin": "A origem do Obatã Amarelo decorre de provável cruzamento do Obatã com o Catuaí Amarelo realizado na Cooperativa dos Cafeicultores da Região de Garça, Estado de São Paulo.",
+                "cultivation": "O Obatã Amarelo possui cultivo de altitude. Indicado, preferencialmente, para plantios adensados ou em renque.",
+                "flavor": "O grão é apreciado por possuir notas deliciosas de chocolate e caramelo.",
+                "varietyOfGrain": "Variedade de café Catuai Amarelo",
+                "originOfGrain": "São Sebastião da Grama, São Paulo",
+                "details": {
+                    "sensoryProfile": "Chocolate e caramelo",
+                    "altitude": "1100m",
+                    "body": 4.0,
+                    "acidity": 3.0
+                }
+            }
+        }
 
-	]
+    ]
 }
