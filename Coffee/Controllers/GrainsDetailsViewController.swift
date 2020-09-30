@@ -20,6 +20,20 @@ class GrainsDetailsViewController: UIViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
+    
+    // Especie de grãos para o Botão
+    var specieGrains: [String] = ["Arábica", "Robusta"];
+    
+    // Título para os detalhes dos grãos
+    var titleForLabel: [String] = ["Espécie", "Origem", "Cultivo", "Sabor"]
+    
+    // Descrição para os detalhes de cada titulo para grãos, Exemplo Catuaí
+    var describeForGrainsDetails = [" ", "Espécie derivada do Arábica amplamente cultivada no Brasil, especialmente na região de Poços, em Minas Gerais.",
+    "Para consiguir extrair todo o potencial dessa variedade, é indispensável que seja cultivado em altitudes acima de 900 m!",
+    "Além de sua acidez moderada e o sabor dispensa o uso de açúcar, ele é um café leve e suave, de aroma adocicado com notas florais."]
+    
+    
+    
     lazy var tableViewWithoutButton: UITableView = {
         let tableViewWithoutButton = UITableView()
         tableViewWithoutButton.delegate = self
@@ -115,7 +129,8 @@ extension GrainsDetailsViewController: UITableViewDelegate, UITableViewDataSourc
         }
         else{
             let cell = tableView.dequeueReusableCell(withIdentifier: "TVWithoutButton", for: indexPath) as! GrainsTableViewCellWithoutButton
-            //cell.titleLabel = array.indexpath.
+            cell.titleLabel.text = titleForLabel[indexPath.row]
+            cell.describeGrainLabel.text = describeForGrainsDetails[indexPath.row]
             return cell
         }
     }

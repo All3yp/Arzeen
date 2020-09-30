@@ -25,7 +25,7 @@ class GrainsTableViewCellWithButton: UITableViewCell{
         self.backgroundColor = UIColor.backgroundColor
     }
     
-    let titleLabel: UILabel = {
+    var titleLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.textColor = UIColor.amareloClaroCustomized
         label.text = "Espécie"
@@ -35,7 +35,7 @@ class GrainsTableViewCellWithButton: UITableViewCell{
         return label
     }()
     
-    let cellButton: UIButton = {
+    var cellButton: UIButton = {
         var button = UIButton(frame: .zero)
         button.backgroundColor = UIColor.globalMarromColor
         button.setTitle("Arabica", for: .normal)

@@ -25,7 +25,7 @@ class GrainsTableViewCellWithoutButton: UITableViewCell{
         self.backgroundColor = UIColor.backgroundColor
     }
     
-    let titleLabel: UILabel = {
+    var titleLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.textColor = UIColor.amareloClaroCustomized
         label.text = "Espécie"
@@ -35,7 +35,7 @@ class GrainsTableViewCellWithoutButton: UITableViewCell{
         return label
     }()
     
-    let describeGrainLabel: UILabel = {
+    var describeGrainLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.textColor = UIColor.whiteColorCustomized
         label.numberOfLines = 0
