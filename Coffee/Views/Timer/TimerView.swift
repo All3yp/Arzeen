@@ -13,10 +13,11 @@ class TimerView: UIView {
 
     lazy var circle: CAShapeLayer = {
         var circle = CAShapeLayer()
-        circle.strokeColor = UIColor.systemYellow.cgColor
+        circle.strokeColor = UIColor.amareloEscuroCustomized?.cgColor
         circle.strokeEnd = 1
-        circle.lineWidth = 10
-        circle.fillColor = UIColor.clear.cgColor
+        circle.lineWidth = 12
+//        circle.fillColor = UIColor.clear.cgColor
+        circle.fillColor = UIColor.globalMarromColor?.cgColor
 
         circle.transform = CATransform3DMakeRotation(-CGFloat.pi / 2, 0, 0, 1)
         return circle
@@ -26,7 +27,7 @@ class TimerView: UIView {
         var circle = CAShapeLayer()
         circle.strokeColor = UIColor.systemGray.cgColor
         circle.strokeEnd = 1
-        circle.lineWidth = 10
+        circle.lineWidth = 13
         circle.fillColor = UIColor.clear.cgColor
 
         circle.transform = CATransform3DMakeRotation(-CGFloat.pi / 2, 0, 0, 1)
@@ -36,17 +37,18 @@ class TimerView: UIView {
     var timeLabel: UILabel = {
         var label = UILabel()
         label.numberOfLines = 0
-        label.font = UIFont.systemFont(ofSize: 56, weight: .ultraLight)
+        label.font = UIFont.systemFont(ofSize: 56, weight: .bold)
         label.textAlignment = .center
+        label.textColor = .gray
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "00:00:00"
+        label.text = "00:00"
         return label
     }()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
 
-        self.backgroundColor = .systemBackground
+        self.backgroundColor = .clear
     }
 
     required init?(coder: NSCoder) {

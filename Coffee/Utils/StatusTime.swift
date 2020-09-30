@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-
+//swiftlint:disable switch_case_alignmen
 enum StatusTimer {
     case start
     case pause
@@ -17,9 +17,9 @@ enum StatusTimer {
     var color: UIColor {
         switch self {
         case .pause:
-            return UIColor.systemYellow
+            return UIColor.amareloEscuroCustomized!
         case .start, .resume:
-            return UIColor.systemGreen
+            return UIColor.amareloEscuroCustomized!
         }
     }
 
