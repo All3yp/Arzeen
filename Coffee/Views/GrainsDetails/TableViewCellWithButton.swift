@@ -22,7 +22,7 @@ class GrainsTableViewCellWithButton: UITableViewCell{
     override func layoutSubviews() {
         setupGrainsViews()
         setupGrainsConstraints()
-        self.backgroundColor = UIColor.white
+        self.backgroundColor = UIColor.backgroundColor
     }
     
     let titleLabel: UILabel = {
@@ -44,6 +44,7 @@ class GrainsTableViewCellWithButton: UITableViewCell{
         button.setTitleColor(UIColor.whiteColorCustomized, for: UIControl.State())
         button.layer.cornerRadius = 10.0
         button.translatesAutoresizingMaskIntoConstraints = false
+        //criar um target para button.target 
         return button
     }()
     

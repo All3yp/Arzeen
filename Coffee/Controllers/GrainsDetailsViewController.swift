@@ -20,32 +20,30 @@ class GrainsDetailsViewController: UIViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
-    
-   /*
     lazy var tableViewWithoutButton: UITableView = {
         let tableViewWithoutButton = UITableView()
         tableViewWithoutButton.delegate = self
         tableViewWithoutButton.dataSource = self
         tableViewWithoutButton.register(GrainsTableViewCellWithoutButton.self, forCellReuseIdentifier: "TVWithoutButton")
+        tableViewWithoutButton.register(GrainsTableViewCellWithButton.self, forCellReuseIdentifier: "TVWithButton")
         view.addSubview(tableViewWithoutButton)
-        tableViewWithoutButton.rowHeight = 250
+        //tableViewWithoutButton.rowHeight = 150
         tableViewWithoutButton.tableAutoLayout(to: view)
         tableViewWithoutButton.separatorStyle = .singleLine
         return tableViewWithoutButton
     }()
-    */
     
-    lazy var tableViewWithButton: UITableView = {
-        let tableViewWithButton = UITableView()
-        tableViewWithButton.delegate = self
-        tableViewWithButton.dataSource = self
-        tableViewWithButton.register(GrainsTableViewCellWithoutButton.self, forCellReuseIdentifier: "TVWithButton")
-        view.addSubview(tableViewWithButton)
-        tableViewWithButton.rowHeight = 125
-        tableViewWithButton.tableAutoLayout(to: view)
-        tableViewWithButton.separatorStyle = .singleLine
-        return tableViewWithButton
-    }()
+//    lazy var tableViewWithButton: UITableView = {
+//        let tableViewWithButton = UITableView()
+//        tableViewWithButton.delegate = self
+//        tableViewWithButton.dataSource = self
+//        tableViewWithButton.register(GrainsTableViewCellWithButton.self, forCellReuseIdentifier: "TVWithButton")
+//        view.addSubview(tableViewWithButton)
+//        tableViewWithButton.rowHeight = 125
+//        tableViewWithButton.tableAutoLayout(to: view)
+//        tableViewWithButton.separatorStyle = .singleLine
+//        return tableViewWithButton
+//    }()
     // setar a tableView
     // Ver o uso do Header (Talk do Yuri)
     //
@@ -81,8 +79,8 @@ extension GrainsDetailsViewController {
 //        ])
         
         NSLayoutConstraint.activate([
-            tableViewWithButton.widthAnchor.constraint(equalTo: self.view.widthAnchor),
-            tableViewWithButton.heightAnchor.constraint(equalTo: self.view.heightAnchor)
+            tableViewWithoutButton.widthAnchor.constraint(equalTo: self.view.widthAnchor),
+            tableViewWithoutButton.heightAnchor.constraint(equalTo: self.view.heightAnchor)
         ])
     }
     // Setando o tamanho da table
@@ -100,20 +98,39 @@ extension GrainsDetailsViewController: UITableViewDelegate, UITableViewDataSourc
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TVWithButton", for: indexPath) as! GrainsTableViewCellWithoutButton
-        return cell
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "TVWithoutButton", for: indexPath) as! GrainsTableViewCellWithoutButton
+//        return cell
 //        switch tableView {
 //        case self.tableViewWithButton:
 //            let cell = tableView.dequeueReusableCell(withIdentifier: "TVWithButton", for: indexPath) as! GrainsTableViewCellWithButton
 //            return cell
+//
 //        default:
-//            let cell = tableView.dequeueReusableCell(withIdentifier: "TVWithoutButton", for: indexPath) as! GrainsTableViewCellWithoutButton
+//            let cell = tableView.dequeueReusableCell(withIdentifier: "TVWithButton", for: indexPath) as! GrainsTableViewCellWithButton
 //            return cell
 //        }
+        if indexPath.row == 0{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "TVWithButton", for: indexPath) as! GrainsTableViewCellWithButton
+            return cell
+        }
+        else{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "TVWithoutButton", for: indexPath) as! GrainsTableViewCellWithoutButton
+            //cell.titleLabel = array.indexpath.
+            return cell
+        }
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // Por o código quando a celula for selecionada
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        // Por o código quando a celula for selecionada
+//    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row == 0{
+            return tableView.frame.size.height/5.25
+        }
+        else{
+            return tableView.frame.size.height/5
+        }
     }
     
 }
