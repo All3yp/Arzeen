@@ -10,6 +10,8 @@ import UIKit
 
 class ConfigDrinkView: UIView {
 
+    weak var timerDelegate: TimerController?
+    
     lazy var drinkImageView: UIImageView = {
         let drinkImageView = UIImageView()
         drinkImageView.image = UIImage(named: "chemex")
@@ -102,8 +104,13 @@ class ConfigDrinkView: UIView {
         buttonInit.layer.cornerRadius = 15
         buttonInit.backgroundColor = UIColor(red: 0.98, green: 0.62, blue: 0.09, alpha: 1.00)
         buttonInit.translatesAutoresizingMaskIntoConstraints = false
+        buttonInit.addTarget(self, action: #selector(timerController), for: .touchUpInside)
         return buttonInit
     }()
+    
+   @objc func timerController() {
+        timerDelegate?.timer()
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
