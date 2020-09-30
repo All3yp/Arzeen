@@ -39,7 +39,7 @@ class GrainsDetailsViewController: UIViewController {
         let tableViewWithButton = UITableView()
         tableViewWithButton.delegate = self
         tableViewWithButton.dataSource = self
-        tableViewWithButton.register(GrainsTableViewCellWithButton.self, forCellReuseIdentifier: "TVWithButton")
+        tableViewWithButton.register(GrainsTableViewCellWithoutButton.self, forCellReuseIdentifier: "TVWithButton")
         view.addSubview(tableViewWithButton)
         tableViewWithButton.rowHeight = 125
         tableViewWithButton.tableAutoLayout(to: view)
@@ -100,7 +100,7 @@ extension GrainsDetailsViewController: UITableViewDelegate, UITableViewDataSourc
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TVWithButton", for: indexPath) as! GrainsTableViewCellWithButton
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TVWithButton", for: indexPath) as! GrainsTableViewCellWithoutButton
         return cell
 //        switch tableView {
 //        case self.tableViewWithButton:

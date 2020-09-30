@@ -39,9 +39,10 @@ class GrainsTableViewCellWithoutButton: UITableViewCell{
         let label = UILabel(frame: .zero)
         label.textColor = UIColor.whiteColorCustomized
         label.numberOfLines = 0
-        label.text = "ConteudoConteudo Conteudo Conteudo Conteudo Conteudo Conteudo "
+        label.text = "Conteudo Conteudo Conteudo Conteudo Conteudo Conteudo Conteudo "
         label.font = UIFont.systemFont(ofSize: 17, weight: .regular)
         label.textAlignment = .left
+        label.lineBreakMode = .byWordWrapping
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -66,7 +67,8 @@ extension GrainsTableViewCellWithoutButton{
         
         NSLayoutConstraint.activate([
             describeGrainLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 8),
-            describeGrainLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16)
+            describeGrainLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
+            describeGrainLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16)
         ])
     }
     
