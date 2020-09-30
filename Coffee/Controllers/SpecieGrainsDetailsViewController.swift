@@ -43,7 +43,7 @@ class SpecieGrainsDetailsViewController: UIViewController {
         view.addSubview(specieGrainsDetailsTableView)
         //tableViewWithoutButton.rowHeight = 150
         specieGrainsDetailsTableView.tableAutoLayout(to: view)
-        specieGrainsDetailsTableView.separatorStyle = .singleLine
+        specieGrainsDetailsTableView.separatorStyle = .none
         return specieGrainsDetailsTableView
     }()
 }
@@ -74,11 +74,16 @@ extension SpecieGrainsDetailsViewController: UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-            let cell = tableView.dequeueReusableCell(withIdentifier: "TVWithoutButton", for: indexPath) as! GrainsTableViewCellWithoutButton
-            cell.titleLabel.text = titleForLabel[indexPath.row]
-            cell.describeGrainLabel.text = describeForGrainsDetails[indexPath.row]
-            return cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TVWithoutButton", for: indexPath) as! GrainsTableViewCellWithoutButton
+        cell.titleLabel.text = titleForLabel[indexPath.row]
+        cell.describeGrainLabel.text = describeForGrainsDetails[indexPath.row]
+        cell.selectionStyle = .none
+        return cell
 
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     

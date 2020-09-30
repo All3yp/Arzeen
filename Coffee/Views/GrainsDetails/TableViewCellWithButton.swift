@@ -44,9 +44,9 @@ class GrainsTableViewCellWithButton: UITableViewCell{
         button.setTitleColor(UIColor.whiteColorCustomized, for: UIControl.State())
         button.layer.cornerRadius = 10.0
         button.translatesAutoresizingMaskIntoConstraints = false
-        //criar um target para button.target 
         return button
     }()
+    
     
 }
 

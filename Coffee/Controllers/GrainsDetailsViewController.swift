@@ -9,7 +9,8 @@
 import UIKit
 
 class GrainsDetailsViewController: UIViewController {
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
        // setup
@@ -32,7 +33,7 @@ class GrainsDetailsViewController: UIViewController {
     "Para consiguir extrair todo o potencial dessa variedade, é indispensável que seja cultivado em altitudes acima de 900 m!",
     "Além de sua acidez moderada e o sabor dispensa o uso de açúcar, ele é um café leve e suave, de aroma adocicado com notas florais."]
     
-    
+   
     
     lazy var tableViewWithoutButton: UITableView = {
         let tableViewWithoutButton = UITableView()
@@ -43,9 +44,17 @@ class GrainsDetailsViewController: UIViewController {
         view.addSubview(tableViewWithoutButton)
         //tableViewWithoutButton.rowHeight = 150
         tableViewWithoutButton.tableAutoLayout(to: view)
-        tableViewWithoutButton.separatorStyle = .singleLine
+        tableViewWithoutButton.separatorStyle = .none
         return tableViewWithoutButton
     }()
+    
+    // Função que avisa para a View que será apresentado uma nova tela
+    @objc func navigateNextScreen(sender: UIButton){
+        //instanciar o left back button item na navigation Bar
+        let specieController = SpecieGrainsDetailsViewController()
+        let navigationController = UINavigationController(rootViewController: specieController)// Setar navigation
+        present(navigationController, animated: true) //Substituir a modal para o fluxo de navegação
+    }
     
 //    lazy var tableViewWithButton: UITableView = {
 //        let tableViewWithButton = UITableView()
@@ -125,19 +134,22 @@ extension GrainsDetailsViewController: UITableViewDelegate, UITableViewDataSourc
 //        }
         if indexPath.row == 0{
             let cell = tableView.dequeueReusableCell(withIdentifier: "TVWithButton", for: indexPath) as! GrainsTableViewCellWithButton
+            cell.cellButton.addTarget(self, action: #selector(navigateNextScreen(sender:)), for: .touchUpInside)
+           // cell.selectionStyle = .none
             return cell
         }
         else{
             let cell = tableView.dequeueReusableCell(withIdentifier: "TVWithoutButton", for: indexPath) as! GrainsTableViewCellWithoutButton
             cell.titleLabel.text = titleForLabel[indexPath.row]
             cell.describeGrainLabel.text = describeForGrainsDetails[indexPath.row]
+            cell.selectionStyle = .none
             return cell
         }
     }
     
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        // Por o código quando a celula for selecionada
-//    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //tableView.deselectRow(at: indexPath, animated: true)
+    }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == 0{
