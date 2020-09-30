@@ -14,6 +14,17 @@ class SalesViewController: UIViewController {
         super.viewDidLoad()
         self.title = "Locais de Venda"
         setupUI()
+        
+        if let path = Bundle.main.path(forResource: "DataModel", ofType: "json") {
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped)
+                let dataModel = try JSONDecoder().decode(ListOfResults.self, from: data)
+                print(dataModel)
+            } catch {
+                print("Failed to read json data")
+            }
+        }
+        
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {

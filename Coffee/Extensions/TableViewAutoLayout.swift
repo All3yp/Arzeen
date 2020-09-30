@@ -1,15 +1,15 @@
 //
-//  tableAutoLayout.swift
+//  TableViewAutoLayout.swift
 //  Coffee
 //
-//  Created by Brena Amorim on 18/09/20.
+//  Created by Brena Amorim on 28/09/20.
 //  Copyright © 2020 Alley Pereira. All rights reserved.
 //
 
 import UIKit
 
 extension UIView {
-
+    
     public func tableAutoLayout(to superView: UIView) {
         translatesAutoresizingMaskIntoConstraints = false
         topAnchor.constraint(equalTo: superView.topAnchor).isActive = true

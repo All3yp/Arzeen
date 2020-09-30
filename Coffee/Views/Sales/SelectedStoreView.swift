@@ -5,8 +5,6 @@
 //  Created by Brena Amorim on 23/09/20.
 //  Copyright © 2020 Alley Pereira. All rights reserved.
 //
-// swiftlint:disable type_body_length
-// swiftlint:disable function_body_length
 
 import UIKit
 import MapKit

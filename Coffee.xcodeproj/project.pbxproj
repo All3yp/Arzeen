@@ -40,13 +40,13 @@
 		E2AB1871251C1998001176C5 /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AB1870251C1998001176C5 /* RightViewController.swift */; };
 		E62E92E12514DE90008D3C56 /* SalesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62E92E02514DE90008D3C56 /* SalesTableViewCell.swift */; };
 		E658ACA425222A0C00F22121 /* SelectedStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E658ACA325222A0C00F22121 /* SelectedStoreViewController.swift */; };
-		E658ACAA25222A4E00F22121 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E658ACA525222A4E00F22121 /* CustomLabel.swift */; };
-		E658ACAB25222A4E00F22121 /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E658ACA625222A4E00F22121 /* StarView.swift */; };
-		E658ACAC25222A4E00F22121 /* SelectedStoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E658ACA725222A4E00F22121 /* SelectedStoreView.swift */; };
-		E658ACAE25222A4E00F22121 /* FiveStarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E658ACA925222A4E00F22121 /* FiveStarsView.swift */; };
 		E658ACB125222A5E00F22121 /* DataModel.json in Resources */ = {isa = PBXBuildFile; fileRef = E658ACAF25222A5D00F22121 /* DataModel.json */; };
 		E658ACB225222A5E00F22121 /* StoreAndGrains.swift in Sources */ = {isa = PBXBuildFile; fileRef = E658ACB025222A5E00F22121 /* StoreAndGrains.swift */; };
 		E658ACB425222AEF00F22121 /* TableViewAutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E658ACB325222AEF00F22121 /* TableViewAutoLayout.swift */; };
+		E658ACCA2523B3FF00F22121 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E658ACC62523B3FF00F22121 /* CustomLabel.swift */; };
+		E658ACCB2523B3FF00F22121 /* SelectedStoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E658ACC72523B3FF00F22121 /* SelectedStoreView.swift */; };
+		E658ACCC2523B3FF00F22121 /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E658ACC82523B3FF00F22121 /* StarView.swift */; };
+		E658ACCD2523B3FF00F22121 /* FiveStarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E658ACC92523B3FF00F22121 /* FiveStarsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,13 +97,14 @@
 		E2AB1870251C1998001176C5 /* RightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightViewController.swift; sourceTree = "<group>"; };
 		E62E92E02514DE90008D3C56 /* SalesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesTableViewCell.swift; sourceTree = "<group>"; };
 		E658ACA325222A0C00F22121 /* SelectedStoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SelectedStoreViewController.swift; path = "../../../../Arquivos originais/Telas de local selecionado e de locais de venda/Controller/SelectedStoreViewController.swift"; sourceTree = "<group>"; };
-		E658ACA525222A4E00F22121 /* CustomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomLabel.swift; path = "../../../../Arquivos originais/Telas de local selecionado e de locais de venda/CustomLabel.swift"; sourceTree = "<group>"; };
-		E658ACA625222A4E00F22121 /* StarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StarView.swift; path = "../../../../Arquivos originais/Telas de local selecionado e de locais de venda/StarView.swift"; sourceTree = "<group>"; };
-		E658ACA725222A4E00F22121 /* SelectedStoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SelectedStoreView.swift; path = "../../../../Arquivos originais/Telas de local selecionado e de locais de venda/SelectedStoreView.swift"; sourceTree = "<group>"; };
-		E658ACA925222A4E00F22121 /* FiveStarsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FiveStarsView.swift; path = "../../../../Arquivos originais/Telas de local selecionado e de locais de venda/FiveStarsView.swift"; sourceTree = "<group>"; };
 		E658ACAF25222A5D00F22121 /* DataModel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = DataModel.json; path = "../../../../Arquivos originais/Telas de local selecionado e de locais de venda/Model/DataModel.json"; sourceTree = "<group>"; };
 		E658ACB025222A5E00F22121 /* StoreAndGrains.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoreAndGrains.swift; path = "../../../../Arquivos originais/Telas de local selecionado e de locais de venda/Model/StoreAndGrains.swift"; sourceTree = "<group>"; };
 		E658ACB325222AEF00F22121 /* TableViewAutoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewAutoLayout.swift; sourceTree = "<group>"; };
+		E658ACC62523B3FF00F22121 /* CustomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		E658ACC72523B3FF00F22121 /* SelectedStoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedStoreView.swift; sourceTree = "<group>"; };
+		E658ACC82523B3FF00F22121 /* StarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarView.swift; sourceTree = "<group>"; };
+		E658ACC92523B3FF00F22121 /* FiveStarsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiveStarsView.swift; sourceTree = "<group>"; };
+		E658ACD225249B4E00F22121 /* SelectedStoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedStoreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +146,7 @@
 		180355B02510E85C00EE830F /* Coffee */ = {
 			isa = PBXGroup;
 			children = (
+				E658ACD02523B55200F22121 /* Extensions */,
 				E2AB182D251C16EE001176C5 /* Utils */,
 				18E405422510EABB004387EE /* Controllers */,
 				18E405412510EAB1004387EE /* Views */,
@@ -191,14 +193,9 @@
 			isa = PBXGroup;
 			children = (
 				E2AB1838251C1730001176C5 /* Drinks */,
+				E658ACCE2523B4DB00F22121 /* Sales */,
 				186745552514EE3600DB2043 /* OnboardingCollectionViewCell.swift */,
 				180355BC2510E85D00EE830F /* LaunchScreen.storyboard */,
-				E658ACA925222A4E00F22121 /* FiveStarsView.swift */,
-				E62E92E02514DE90008D3C56 /* SalesTableViewCell.swift */,
-				E658ACA525222A4E00F22121 /* CustomLabel.swift */,
-				E658ACA725222A4E00F22121 /* SelectedStoreView.swift */,
-				E658ACA625222A4E00F22121 /* StarView.swift */,
-				E658ACB325222AEF00F22121 /* TableViewAutoLayout.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -208,8 +205,8 @@
 			children = (
 				18184583251CE48900346F71 /* Grains */,
 				E2AB185F251C1932001176C5 /* Drinks */,
+				E658ACD125249B4E00F22121 /* Sales */,
 				180355B52510E85C00EE830F /* ViewController.swift */,
-				1867454925124C2F00DB2043 /* SalesViewController.swift */,
 				E658ACA325222A0C00F22121 /* SelectedStoreViewController.swift */,
 				1867454B25124CEC00DB2043 /* TabBarViewController.swift */,
 				1867454E2513AF2900DB2043 /* CollectionOnboardViewController.swift */,
@@ -268,6 +265,35 @@
 				E2AB1870251C1998001176C5 /* RightViewController.swift */,
 			);
 			path = Drinks;
+			sourceTree = "<group>";
+		};
+		E658ACCE2523B4DB00F22121 /* Sales */ = {
+			isa = PBXGroup;
+			children = (
+				E658ACC62523B3FF00F22121 /* CustomLabel.swift */,
+				E658ACC92523B3FF00F22121 /* FiveStarsView.swift */,
+				E658ACC72523B3FF00F22121 /* SelectedStoreView.swift */,
+				E658ACC82523B3FF00F22121 /* StarView.swift */,
+				E62E92E02514DE90008D3C56 /* SalesTableViewCell.swift */,
+			);
+			path = Sales;
+			sourceTree = "<group>";
+		};
+		E658ACD02523B55200F22121 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E658ACB325222AEF00F22121 /* TableViewAutoLayout.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E658ACD125249B4E00F22121 /* Sales */ = {
+			isa = PBXGroup;
+			children = (
+				1867454925124C2F00DB2043 /* SalesViewController.swift */,
+				E658ACD225249B4E00F22121 /* SelectedStoreViewController.swift */,
+			);
+			path = Sales;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -392,20 +418,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E658ACCD2523B3FF00F22121 /* FiveStarsView.swift in Sources */,
+				E658ACCA2523B3FF00F22121 /* CustomLabel.swift in Sources */,
 				E62E92E12514DE90008D3C56 /* SalesTableViewCell.swift in Sources */,
 				E2AB1871251C1998001176C5 /* RightViewController.swift in Sources */,
 				E2AB1850251C18B0001176C5 /* ConfigDrinkView.swift in Sources */,
 				180355B62510E85C00EE830F /* ViewController.swift in Sources */,
 				E658ACA425222A0C00F22121 /* SelectedStoreViewController.swift in Sources */,
-				E658ACAC25222A4E00F22121 /* SelectedStoreView.swift in Sources */,
-				E658ACAE25222A4E00F22121 /* FiveStarsView.swift in Sources */,
-				E658ACAB25222A4E00F22121 /* StarView.swift in Sources */,
-				E658ACAA25222A4E00F22121 /* CustomLabel.swift in Sources */,
 				E658ACB225222A5E00F22121 /* StoreAndGrains.swift in Sources */,
 				E658ACB425222AEF00F22121 /* TableViewAutoLayout.swift in Sources */,
 				E2AB1848251C1852001176C5 /* ImageDrinkView.swift in Sources */,
 				1867454A25124C2F00DB2043 /* SalesViewController.swift in Sources */,
 				1867454C25124CEC00DB2043 /* TabBarViewController.swift in Sources */,
+				E658ACCC2523B3FF00F22121 /* StarView.swift in Sources */,
 				E2AB1869251C196F001176C5 /* ConfigDrinkViewController.swift in Sources */,
 				E2AB1854251C18CA001176C5 /* BackgroundConfigView.swift in Sources */,
 				E2AB186D251C1982001176C5 /* MethodViewController.swift in Sources */,
@@ -416,6 +441,7 @@
 				180355B22510E85C00EE830F /* AppDelegate.swift in Sources */,
 				E2AB1858251C18DE001176C5 /* ProcessCollectionViewCell.swift in Sources */,
 				180355B42510E85C00EE830F /* SceneDelegate.swift in Sources */,
+				E658ACCB2523B3FF00F22121 /* SelectedStoreView.swift in Sources */,
 				18184593251CE67B00346F71 /* SliderGrainsView.swift in Sources */,
 				1818458F251CE54300346F71 /* GrainsCollectionViewCell.swift in Sources */,
 				186745562514EE3600DB2043 /* OnboardingCollectionViewCell.swift in Sources */,
