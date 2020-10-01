@@ -50,6 +50,6 @@ class TabBarViewController: UITabBarController {
         tabBar.backgroundColor = UIColor.globalMarromColor
         tabBar.barTintColor = UIColor.blackColorCustomized
         tabBar.tintColor = UIColor.amareloEscuroCustomized
-        
+
     }
 }

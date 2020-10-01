@@ -8,15 +8,31 @@
 
 import UIKit
 
-class ConfigDrinkViewController: UIViewController {
-
+class ConfigDrinkViewController: UIViewController, TimerController {
+    func timer() {
+        let timer = TimeTaskViewController()
+        navigationController?.pushViewController(timer, animated: true)
+    }
+    
     lazy var configDrinkView: ConfigDrinkView = {
         let configDrinkView = ConfigDrinkView()
+        
+        configDrinkView.timerDelegate = self
+        configDrinkView.configDelegate = self
         return configDrinkView
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view = configDrinkView
+    }
+}
+
+extension ConfigDrinkViewController: ConfigDrinkDelegate {
+    func presentMethodDrink() {
+        let methodController = MethodViewController()
+        let navigation = UINavigationController(rootViewController: methodController)
+        
+        present(navigation, animated: true, completion: nil)
     }
 }

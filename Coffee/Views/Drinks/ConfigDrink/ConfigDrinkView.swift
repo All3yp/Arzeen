@@ -9,7 +9,11 @@
 import UIKit
 
 class ConfigDrinkView: UIView {
+    
+    weak var configDelegate: ConfigDrinkDelegate?
 
+    weak var timerDelegate: TimerController?
+    
     lazy var drinkImageView: UIImageView = {
         let drinkImageView = UIImageView()
         drinkImageView.image = UIImage(named: "chemex")
@@ -102,8 +106,13 @@ class ConfigDrinkView: UIView {
         buttonInit.layer.cornerRadius = 15
         buttonInit.backgroundColor = UIColor(red: 0.98, green: 0.62, blue: 0.09, alpha: 1.00)
         buttonInit.translatesAutoresizingMaskIntoConstraints = false
+        buttonInit.addTarget(self, action: #selector(timerController), for: .touchUpInside)
         return buttonInit
     }()
+    
+   @objc func timerController() {
+        timerDelegate?.timer()
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -115,6 +124,10 @@ class ConfigDrinkView: UIView {
     
     override func layoutSubviews() {
         setUp()
+    }
+    
+    @objc func presentMethod() {
+        configDelegate?.presentMethodDrink()
     }
     
 }
@@ -206,6 +219,9 @@ extension ConfigDrinkView: UICollectionViewDelegate, UICollectionViewDataSource 
             case self.processCollection:
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "processCell", for: indexPath) as! ProcessCollectionViewCell
                 cell.configCell(processIcon: UIImage(named: "expresso")!, nameProcess: "Hario16")
+                let longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(presentMethod))
+                longPressGesture.minimumPressDuration = 1.0 // 1 second press
+                cell.addGestureRecognizer(longPressGesture)
                 return cell
             default:
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "measureCell", for: indexPath) as! MeasureCollectionViewCell
