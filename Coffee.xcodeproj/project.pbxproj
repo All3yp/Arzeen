@@ -14,7 +14,6 @@
 		180355BE2510E85D00EE830F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180355BC2510E85D00EE830F /* LaunchScreen.storyboard */; };
 		180355C92510E85D00EE830F /* CoffeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180355C82510E85D00EE830F /* CoffeeTests.swift */; };
 		18184585251CE4B300346F71 /* GrainsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18184584251CE4B300346F71 /* GrainsCollectionViewController.swift */; };
-		1818458B251CE51E00346F71 /* GrainsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1818458A251CE51E00346F71 /* GrainsModel.swift */; };
 		1818458F251CE54300346F71 /* GrainsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1818458E251CE54300346F71 /* GrainsCollectionViewCell.swift */; };
 		18184593251CE67B00346F71 /* SliderGrainsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18184592251CE67B00346F71 /* SliderGrainsView.swift */; };
 		1867454A25124C2F00DB2043 /* SalesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867454925124C2F00DB2043 /* SalesViewController.swift */; };
@@ -43,6 +42,14 @@
 		E2AB188125221CDF001176C5 /* ConfigDrinkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AB188025221CDF001176C5 /* ConfigDrinkProtocol.swift */; };
 		E62E92DF2514DC7E008D3C56 /* TableViewAutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62E92DE2514DC7E008D3C56 /* TableViewAutoLayout.swift */; };
 		E62E92E12514DE90008D3C56 /* SalesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62E92E02514DE90008D3C56 /* SalesTableViewCell.swift */; };
+		E658ACB425222AEF00F22121 /* TableViewAutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E658ACB325222AEF00F22121 /* TableViewAutoLayout.swift */; };
+		E658ACCA2523B3FF00F22121 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E658ACC62523B3FF00F22121 /* CustomLabel.swift */; };
+		E658ACCB2523B3FF00F22121 /* SelectedStoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E658ACC72523B3FF00F22121 /* SelectedStoreView.swift */; };
+		E658ACCC2523B3FF00F22121 /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E658ACC82523B3FF00F22121 /* StarView.swift */; };
+		E658ACCD2523B3FF00F22121 /* FiveStarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E658ACC92523B3FF00F22121 /* FiveStarsView.swift */; };
+		E658ACDB2524BEC900F22121 /* StoreAndGrains.swift in Sources */ = {isa = PBXBuildFile; fileRef = E658ACD92524BEC900F22121 /* StoreAndGrains.swift */; };
+		E658ACDC2524BEC900F22121 /* DataModel.json in Resources */ = {isa = PBXBuildFile; fileRef = E658ACDA2524BEC900F22121 /* DataModel.json */; };
+		E658ACDE2524C1A300F22121 /* SelectedStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E658ACDD2524C1A300F22121 /* SelectedStoreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +74,6 @@
 		180355C82510E85D00EE830F /* CoffeeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeTests.swift; sourceTree = "<group>"; };
 		180355CA2510E85D00EE830F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18184584251CE4B300346F71 /* GrainsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrainsCollectionViewController.swift; sourceTree = "<group>"; };
-		1818458A251CE51E00346F71 /* GrainsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrainsModel.swift; sourceTree = "<group>"; };
 		1818458E251CE54300346F71 /* GrainsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrainsCollectionViewCell.swift; sourceTree = "<group>"; };
 		18184592251CE67B00346F71 /* SliderGrainsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderGrainsView.swift; sourceTree = "<group>"; };
 		1867454925124C2F00DB2043 /* SalesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +102,14 @@
 		E2AB188025221CDF001176C5 /* ConfigDrinkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigDrinkProtocol.swift; sourceTree = "<group>"; };
 		E62E92DE2514DC7E008D3C56 /* TableViewAutoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewAutoLayout.swift; sourceTree = "<group>"; };
 		E62E92E02514DE90008D3C56 /* SalesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesTableViewCell.swift; sourceTree = "<group>"; };
+		E658ACB325222AEF00F22121 /* TableViewAutoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewAutoLayout.swift; sourceTree = "<group>"; };
+		E658ACC62523B3FF00F22121 /* CustomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		E658ACC72523B3FF00F22121 /* SelectedStoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedStoreView.swift; sourceTree = "<group>"; };
+		E658ACC82523B3FF00F22121 /* StarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarView.swift; sourceTree = "<group>"; };
+		E658ACC92523B3FF00F22121 /* FiveStarsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiveStarsView.swift; sourceTree = "<group>"; };
+		E658ACD92524BEC900F22121 /* StoreAndGrains.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreAndGrains.swift; sourceTree = "<group>"; };
+		E658ACDA2524BEC900F22121 /* DataModel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DataModel.json; sourceTree = "<group>"; };
+		E658ACDD2524C1A300F22121 /* SelectedStoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedStoreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +151,7 @@
 		180355B02510E85C00EE830F /* Coffee */ = {
 			isa = PBXGroup;
 			children = (
+				E658ACD02523B55200F22121 /* Extensions */,
 				E2AB182D251C16EE001176C5 /* Utils */,
 				18E405422510EABB004387EE /* Controllers */,
 				18E405412510EAB1004387EE /* Views */,
@@ -162,7 +177,6 @@
 			isa = PBXGroup;
 			children = (
 				18184584251CE4B300346F71 /* GrainsCollectionViewController.swift */,
-				1818458A251CE51E00346F71 /* GrainsModel.swift */,
 				1818458E251CE54300346F71 /* GrainsCollectionViewCell.swift */,
 				18184592251CE67B00346F71 /* SliderGrainsView.swift */,
 			);
@@ -172,6 +186,8 @@
 		18E405402510EA9C004387EE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E658ACDA2524BEC900F22121 /* DataModel.json */,
+				E658ACD92524BEC900F22121 /* StoreAndGrains.swift */,
 				1867455025141E5400DB2043 /* UiColor+Extension.swift */,
 				186745572514FAB800DB2043 /* OnBoarding.swift */,
 			);
@@ -182,10 +198,9 @@
 			isa = PBXGroup;
 			children = (
 				E2AB1838251C1730001176C5 /* Drinks */,
+				E658ACCE2523B4DB00F22121 /* Sales */,
 				186745552514EE3600DB2043 /* OnboardingCollectionViewCell.swift */,
 				180355BC2510E85D00EE830F /* LaunchScreen.storyboard */,
-				E62E92E02514DE90008D3C56 /* SalesTableViewCell.swift */,
-				E62E92DE2514DC7E008D3C56 /* TableViewAutoLayout.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -195,8 +210,8 @@
 			children = (
 				18184583251CE48900346F71 /* Grains */,
 				E2AB185F251C1932001176C5 /* Drinks */,
+				E658ACD125249B4E00F22121 /* Sales */,
 				180355B52510E85C00EE830F /* ViewController.swift */,
-				1867454925124C2F00DB2043 /* SalesViewController.swift */,
 				1867454B25124CEC00DB2043 /* TabBarViewController.swift */,
 				1867454E2513AF2900DB2043 /* CollectionOnboardViewController.swift */,
 			);
@@ -256,6 +271,35 @@
 				E2AB1870251C1998001176C5 /* RightViewController.swift */,
 			);
 			path = Drinks;
+			sourceTree = "<group>";
+		};
+		E658ACCE2523B4DB00F22121 /* Sales */ = {
+			isa = PBXGroup;
+			children = (
+				E658ACC62523B3FF00F22121 /* CustomLabel.swift */,
+				E658ACC92523B3FF00F22121 /* FiveStarsView.swift */,
+				E658ACC72523B3FF00F22121 /* SelectedStoreView.swift */,
+				E658ACC82523B3FF00F22121 /* StarView.swift */,
+				E62E92E02514DE90008D3C56 /* SalesTableViewCell.swift */,
+			);
+			path = Sales;
+			sourceTree = "<group>";
+		};
+		E658ACD02523B55200F22121 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E658ACB325222AEF00F22121 /* TableViewAutoLayout.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E658ACD125249B4E00F22121 /* Sales */ = {
+			isa = PBXGroup;
+			children = (
+				1867454925124C2F00DB2043 /* SalesViewController.swift */,
+				E658ACDD2524C1A300F22121 /* SelectedStoreViewController.swift */,
+			);
+			path = Sales;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,6 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				180355BE2510E85D00EE830F /* LaunchScreen.storyboard in Resources */,
+				E658ACDC2524BEC900F22121 /* DataModel.json in Resources */,
 				180355BB2510E85D00EE830F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,15 +424,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E658ACDE2524C1A300F22121 /* SelectedStoreViewController.swift in Sources */,
+				E658ACCD2523B3FF00F22121 /* FiveStarsView.swift in Sources */,
+				E658ACCA2523B3FF00F22121 /* CustomLabel.swift in Sources */,
 				E62E92E12514DE90008D3C56 /* SalesTableViewCell.swift in Sources */,
 				E2AB1871251C1998001176C5 /* RightViewController.swift in Sources */,
+				E658ACDB2524BEC900F22121 /* StoreAndGrains.swift in Sources */,
 				E2AB1850251C18B0001176C5 /* ConfigDrinkView.swift in Sources */,
 				180355B62510E85C00EE830F /* ViewController.swift in Sources */,
-				1818458B251CE51E00346F71 /* GrainsModel.swift in Sources */,
+				E658ACB425222AEF00F22121 /* TableViewAutoLayout.swift in Sources */,
 				E2AB1848251C1852001176C5 /* ImageDrinkView.swift in Sources */,
 				1867454A25124C2F00DB2043 /* SalesViewController.swift in Sources */,
 				E2AB187D2522121B001176C5 /* MethodView.swift in Sources */,
 				1867454C25124CEC00DB2043 /* TabBarViewController.swift in Sources */,
+				E658ACCC2523B3FF00F22121 /* StarView.swift in Sources */,
 				E2AB1869251C196F001176C5 /* ConfigDrinkViewController.swift in Sources */,
 				E2AB1854251C18CA001176C5 /* BackgroundConfigView.swift in Sources */,
 				E2AB186D251C1982001176C5 /* MethodViewController.swift in Sources */,
@@ -399,6 +449,7 @@
 				180355B22510E85C00EE830F /* AppDelegate.swift in Sources */,
 				E2AB1858251C18DE001176C5 /* ProcessCollectionViewCell.swift in Sources */,
 				180355B42510E85C00EE830F /* SceneDelegate.swift in Sources */,
+				E658ACCB2523B3FF00F22121 /* SelectedStoreView.swift in Sources */,
 				18184593251CE67B00346F71 /* SliderGrainsView.swift in Sources */,
 				1818458F251CE54300346F71 /* GrainsCollectionViewCell.swift in Sources */,
 				186745562514EE3600DB2043 /* OnboardingCollectionViewCell.swift in Sources */,
@@ -409,7 +460,6 @@
 				E2AB1835251C170A001176C5 /* DrinksProtocol.swift in Sources */,
 				1867455125141E5400DB2043 /* UiColor+Extension.swift in Sources */,
 				E2AB184C251C1872001176C5 /* HarmonizationCollectionViewCell.swift in Sources */,
-				E62E92DF2514DC7E008D3C56 /* TableViewAutoLayout.swift in Sources */,
 				E2AB183E251C1759001176C5 /* DrinkTableViewCell.swift in Sources */,
 				E2AB182F251C16FF001176C5 /* ViewCode.swift in Sources */,
 			);

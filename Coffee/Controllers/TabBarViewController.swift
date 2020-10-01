@@ -14,6 +14,7 @@ class TabBarViewController: UITabBarController {
         super.viewDidLoad()
         
         view.backgroundColor = .globalMarromColor
+
         
         let mainVC = DrinksViewController()
         let navDrinksController = UINavigationController(rootViewController: mainVC)
@@ -31,9 +32,11 @@ class TabBarViewController: UITabBarController {
         
         let rightVC = SalesViewController()
         let navSalesController = UINavigationController()
-        navSalesController.navigationBar.barTintColor = UIColor.textColor
-        navSalesController.navigationBar.backgroundColor = UIColor.navigationColor
-        let attrs = [ NSAttributedString.Key.foregroundColor: UIColor.textColor ]
+        // mudando a status bar color
+        navSalesController.navigationBar.barStyle  = .black
+        navSalesController.navigationBar.barTintColor = UIColor.whiteColorCustomized
+        navSalesController.navigationBar.backgroundColor = UIColor.globalMarromColor
+        let attrs = [ NSAttributedString.Key.foregroundColor: UIColor.whiteColorCustomized ]
         navSalesController.navigationBar.largeTitleTextAttributes = attrs as [NSAttributedString.Key: Any]
         
         navSalesController.navigationBar.prefersLargeTitles = true

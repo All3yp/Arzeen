@@ -149,7 +149,7 @@ extension GrainsCollectionViewController: UICollectionViewDelegate, UICollection
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GrainsCollectionViewCell", for: indexPath) as! GrainsCollectionViewCell
-        cell.imageView.image = UIImage(named: grains[indexPath.row].imageName)
+        cell.imageView.image = UIImage(named: grains[indexPath.row].imageName!)
         cell.grainLabel.text = grains[indexPath.row].name
         cell.cityLabel.text = grains[indexPath.row].state
         cell.countryLabel.text = grains[indexPath.row].country
