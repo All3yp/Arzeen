@@ -150,7 +150,7 @@ extension CollectionOnboardViewController: UICollectionViewDelegateFlowLayout, U
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: UIScreen.main.bounds.width, height: 500)
+        return CGSize(width: UIScreen.main.bounds.width, height: 400)
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
