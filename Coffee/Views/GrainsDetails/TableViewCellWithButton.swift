@@ -22,7 +22,7 @@ class GrainsTableViewCellWithButton: UITableViewCell{
     override func layoutSubviews() {
         setupGrainsViews()
         setupGrainsConstraints()
-        self.backgroundColor = UIColor.backgroundColor
+        self.backgroundColor = UIColor.globalMarromColor
     }
     
     var titleLabel: UILabel = {

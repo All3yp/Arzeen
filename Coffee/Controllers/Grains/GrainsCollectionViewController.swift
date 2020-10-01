@@ -153,8 +153,12 @@ extension GrainsCollectionViewController: UICollectionViewDelegate, UICollection
         cell.grainLabel.text = grains[indexPath.row].name
         cell.cityLabel.text = grains[indexPath.row].state
         cell.countryLabel.text = grains[indexPath.row].country
-        
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let destination = GrainsDetailsViewController()
+        navigationController?.pushViewController(destination, animated: true)
     }
 }
 

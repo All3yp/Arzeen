@@ -13,7 +13,7 @@ class GrainsDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       // setup
+       // setup a cor do do titulo do Grão
         setupGrainsUI()
         // Do any additional setup after loading the view.
     }
