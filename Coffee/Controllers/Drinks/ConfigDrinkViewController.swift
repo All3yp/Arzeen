@@ -8,10 +8,16 @@
 
 import UIKit
 
-class ConfigDrinkViewController: UIViewController {
-
+class ConfigDrinkViewController: UIViewController, TimerController {
+    func timer() {
+        let timer = TimeTaskViewController()
+        navigationController?.pushViewController(timer, animated: true)
+    }
+    
     lazy var configDrinkView: ConfigDrinkView = {
         let configDrinkView = ConfigDrinkView()
+        
+        configDrinkView.timerDelegate = self
         configDrinkView.configDelegate = self
         return configDrinkView
     }()

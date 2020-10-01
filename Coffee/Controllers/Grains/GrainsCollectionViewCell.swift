@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-
+//swiftlint:disable trailing_comma
 class GrainsCollectionViewCell: UICollectionViewCell {
     
     // MARK: - Initialization

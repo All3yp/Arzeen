@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-//swiftlint disable: identifier_name
+//swiftlint: disable identifier_name
 
 class SliderGrainsView: UIView {
         

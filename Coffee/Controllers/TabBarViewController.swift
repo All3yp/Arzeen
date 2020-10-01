@@ -15,7 +15,6 @@ class TabBarViewController: UITabBarController {
         
         view.backgroundColor = .globalMarromColor
 
-        
         let mainVC = DrinksViewController()
         let navDrinksController = UINavigationController(rootViewController: mainVC)
         navDrinksController.navigationBar.barTintColor = UIColor(red: 0.16, green: 0.12, blue: 0.13, alpha: 1.00)
@@ -50,8 +49,5 @@ class TabBarViewController: UITabBarController {
         
         tabBar.backgroundColor = .globalMarromColor
         tabBar.tintColor = .amareloEscuroCustomized
-        
-        //Testar tela
-//        self.selectedIndex = 1
     }
 }
