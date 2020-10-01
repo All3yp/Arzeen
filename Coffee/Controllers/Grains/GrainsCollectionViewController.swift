@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-
+//swiftlint:disable force_cast
 class GrainsCollectionViewController: UIViewController {
     
     // MARK: - Lifecycle Methods

@@ -42,8 +42,20 @@ class TimeTaskView: UIView {
         return button
     }()
     
+    let circleImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.contentMode = UIView.ContentMode.scaleAspectFit
+//        imageView.frame.size.width = 150
+//        imageView.frame.size.height = 150
+        imageView.backgroundColor = UIColor.amareloEscuroCustomized
+        imageView.layer.cornerRadius = 30
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+//        myImageView.center = self.view.center
+        return imageView
+    }()
+    
     lazy var descriptionView: UIView = {
-        var view = UIView()
+        let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = UIColor.globalMarromColor
         view.layer.cornerRadius = 5
@@ -110,6 +122,7 @@ class TimeTaskView: UIView {
         self.addSubview(descriptionView)
         self.addSubview(descriptionTask)
         self.addSubview(timerView)
+        self.addSubview(circleImageView)
     }
     
     private func configureLayout() {
@@ -123,6 +136,11 @@ class TimeTaskView: UIView {
             timerView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -8),
             timerView.centerXAnchor.constraint(equalTo: self.centerXAnchor),
             timerView.heightAnchor.constraint(equalToConstant: 300),
+            
+            circleImageView.trailingAnchor.constraint(equalTo: timerView.trailingAnchor, constant: -60),
+            circleImageView.bottomAnchor.constraint(equalTo: timerView.bottomAnchor, constant: -15),
+            circleImageView.widthAnchor.constraint(equalToConstant: 60),
+            circleImageView.heightAnchor.constraint(equalToConstant: 60),
             
             previousButton.leftAnchor.constraint(equalTo: timerView.leftAnchor, constant: 20),
             previousButton.topAnchor.constraint(equalTo: timerView.bottomAnchor, constant: 45),

@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-//swiftlint:disable switch_case_alignmen
+//swiftlint:disable switch_case_alignmen superfluous_disable_command
 enum StatusTimer {
     case start
     case pause
