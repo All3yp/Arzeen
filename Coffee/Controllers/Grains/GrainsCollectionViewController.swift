@@ -79,6 +79,7 @@ extension GrainsCollectionViewController {
             appearance.backgroundImage = UIImage(named: "GrainsLogo")
             appearance.backgroundImageContentMode = .scaleAspectFill
             appearance.shadowColor = .clear
+            appearance.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
             return appearance
         }()
         

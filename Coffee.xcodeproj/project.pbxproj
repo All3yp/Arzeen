@@ -44,6 +44,9 @@
 		E2AB1869251C196F001176C5 /* ConfigDrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AB1868251C196F001176C5 /* ConfigDrinkViewController.swift */; };
 		E2AB186D251C1982001176C5 /* MethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AB186C251C1982001176C5 /* MethodViewController.swift */; };
 		E2AB1871251C1998001176C5 /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AB1870251C1998001176C5 /* RightViewController.swift */; };
+		E2AB187D2522121B001176C5 /* MethodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AB187C2522121B001176C5 /* MethodView.swift */; };
+		E2AB188125221CDF001176C5 /* ConfigDrinkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AB188025221CDF001176C5 /* ConfigDrinkProtocol.swift */; };
+		E62E92DF2514DC7E008D3C56 /* TableViewAutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62E92DE2514DC7E008D3C56 /* TableViewAutoLayout.swift */; };
 		E62E92E12514DE90008D3C56 /* SalesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62E92E02514DE90008D3C56 /* SalesTableViewCell.swift */; };
 		E658ACB425222AEF00F22121 /* TableViewAutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E658ACB325222AEF00F22121 /* TableViewAutoLayout.swift */; };
 		E658ACCA2523B3FF00F22121 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E658ACC62523B3FF00F22121 /* CustomLabel.swift */; };
@@ -107,6 +110,9 @@
 		E2AB1868251C196F001176C5 /* ConfigDrinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigDrinkViewController.swift; sourceTree = "<group>"; };
 		E2AB186C251C1982001176C5 /* MethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodViewController.swift; sourceTree = "<group>"; };
 		E2AB1870251C1998001176C5 /* RightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightViewController.swift; sourceTree = "<group>"; };
+		E2AB187C2522121B001176C5 /* MethodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodView.swift; sourceTree = "<group>"; };
+		E2AB188025221CDF001176C5 /* ConfigDrinkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigDrinkProtocol.swift; sourceTree = "<group>"; };
+		E62E92DE2514DC7E008D3C56 /* TableViewAutoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewAutoLayout.swift; sourceTree = "<group>"; };
 		E62E92E02514DE90008D3C56 /* SalesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesTableViewCell.swift; sourceTree = "<group>"; };
 		E658ACB325222AEF00F22121 /* TableViewAutoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewAutoLayout.swift; sourceTree = "<group>"; };
 		E658ACC62523B3FF00F22121 /* CustomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
@@ -251,6 +257,7 @@
 				180089012524C434006FA3CC /* TimeDelegate.swift */,
 				180089162524C51B006FA3CC /* StatusTime.swift */,
 				1800891A2524C674006FA3CC /* TimerProtocol.swift */,
+				E2AB188025221CDF001176C5 /* ConfigDrinkProtocol.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -262,6 +269,7 @@
 				E2AB1842251C17E3001176C5 /* ConfigDrink */,
 				E2AB1839251C174D001176C5 /* DrinksView.swift */,
 				E2AB183D251C1759001176C5 /* DrinkTableViewCell.swift */,
+				E2AB187C2522121B001176C5 /* MethodView.swift */,
 			);
 			path = Drinks;
 			sourceTree = "<group>";
@@ -462,12 +470,14 @@
 				180089132524C4C2006FA3CC /* TimeTaskController.swift in Sources */,
 				E2AB1848251C1852001176C5 /* ImageDrinkView.swift in Sources */,
 				1867454A25124C2F00DB2043 /* SalesViewController.swift in Sources */,
+				E2AB187D2522121B001176C5 /* MethodView.swift in Sources */,
 				1867454C25124CEC00DB2043 /* TabBarViewController.swift in Sources */,
 				E658ACCC2523B3FF00F22121 /* StarView.swift in Sources */,
 				E2AB1869251C196F001176C5 /* ConfigDrinkViewController.swift in Sources */,
 				E2AB1854251C18CA001176C5 /* BackgroundConfigView.swift in Sources */,
 				E2AB186D251C1982001176C5 /* MethodViewController.swift in Sources */,
 				1867454F2513AF2900DB2043 /* CollectionOnboardViewController.swift in Sources */,
+				E2AB188125221CDF001176C5 /* ConfigDrinkProtocol.swift in Sources */,
 				E2AB1865251C1956001176C5 /* SelectedDrinkViewController.swift in Sources */,
 				1800890D2524C4A1006FA3CC /* TimerView.swift in Sources */,
 				E2AB183A251C174D001176C5 /* DrinksView.swift in Sources */,
