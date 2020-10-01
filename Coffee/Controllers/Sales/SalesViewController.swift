@@ -10,21 +10,13 @@ import UIKit
 
 class SalesViewController: UIViewController {
     
+    let modelStore = ModelRepository().readAll()
+    let destination = SelectedStoreViewController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Locais de Venda"
         setupUI()
-        
-        if let path = Bundle.main.path(forResource: "DataModel", ofType: "json") {
-            do {
-                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped)
-                let dataModel = try JSONDecoder().decode(ListOfResults.self, from: data)
-                print(dataModel)
-            } catch {
-                print("Failed to read json data")
-            }
-        }
-        
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -40,15 +32,15 @@ class SalesViewController: UIViewController {
         view.addSubview(tableView)
         tableView.rowHeight = 139
         tableView.tableAutoLayout(to: view)
+        tableView.backgroundColor = UIColor.blackColorCustomized
         tableView.separatorStyle = .none
         
         return tableView
     }()
     
-    @objc private func pressedStoreButton(sender: UIButton) {
-        let destination = SelectedStoreViewController()
-        present(destination, animated: true)
-    }
+    //    @objc private func pressedStoreButton(sender: UIButton) {
+    //        present(destination, animated: true)
+    //    }
     
 }
 
@@ -70,7 +62,7 @@ extension SalesViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 6
+        return modelStore.listOfStores.count
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -82,16 +74,32 @@ extension SalesViewController: UITableViewDelegate, UITableViewDataSource {
             return SalesTableViewCell()
         }
         
-        cell.storeButton.addTarget(self, action: #selector(pressedStoreButton), for: .touchUpInside)
-        //        cell.storeButton.tag = section
-        cell.store2Button.addTarget(self, action: #selector(pressedStoreButton), for: .touchUpInside)
+        //        destination.storeSelectedData = modelStore.listOfStores[indexPath.row]
+        //Mandando os dados da loja selecionada pra selectedStore
+        
+        cell.selectedButton = self
+        
+        cell.index = indexPath.row
+        
+        cell.grainNameLabel.text = modelStore.listOfStores[indexPath.row].grain?.nameOfCoffee
+        cell.typeOfGrainLabel.text = modelStore.listOfStores[indexPath.row].grain?.varietyOfGrain
+        cell.storeButton.setTitle(modelStore.listOfStores[indexPath.row].name, for: .normal)
+        cell.firstStoreImageView.image = UIImage(named: modelStore.listOfStores[indexPath.row].imageStore!)
+        //Consumindo o model nos elementos da tela
         
         cell.selectionStyle = .none
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //Set code for a selected row
+}
+
+extension SalesViewController: StoreButtonSelected {
+    func nextScreen(index: Int) {
+        destination.indexRow = index
+        destination.storeSelectedData = modelStore.listOfStores[index]
+        
+        present(destination, animated: true)
+        
     }
     
 }

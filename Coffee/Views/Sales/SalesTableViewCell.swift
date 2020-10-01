@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol StoreButtonSelected: class {
+    func nextScreen(index: Int)
+}
+
 class SalesTableViewCell: UITableViewCell {
     
     // Inicialization
@@ -25,7 +29,10 @@ class SalesTableViewCell: UITableViewCell {
         self.backgroundColor = UIColor.blackColorCustomized
     }
     
-    let grainLabel: UILabel = {
+    var index: Int?
+    weak var selectedButton: StoreButtonSelected?
+    
+    lazy var grainNameLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.textColor = UIColor.amareloClaroCustomized
         label.numberOfLines = 1
@@ -37,10 +44,10 @@ class SalesTableViewCell: UITableViewCell {
         return label
     }()
     
-    let typeOfGrainLabel: UILabel = {
+    lazy var typeOfGrainLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.textColor = UIColor.whiteColorCustomized
-        label.numberOfLines = 1
+        label.numberOfLines = 2
         label.text = "Variedade de café Arábica"
         label.font = UIFont.systemFont(ofSize: 15, weight: .regular)
         label.textAlignment = .left
@@ -48,7 +55,7 @@ class SalesTableViewCell: UITableViewCell {
         return label
     }()
 
-    let storeButton: UIButton = {
+    lazy var storeButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Amika Coffehouse", for: .normal)
         button.contentHorizontalAlignment = .left
@@ -59,10 +66,13 @@ class SalesTableViewCell: UITableViewCell {
         button.titleLabel?.adjustsFontSizeToFitWidth = true
         button.titleLabel?.minimumScaleFactor = 0.7
         button.backgroundColor = UIColor.clear
+        
+        button.addTarget(self, action: #selector(pressedStoreButton), for: .touchUpInside)
+        
         return button
     }()
 
-    let store2Button: UIButton = {
+    lazy var store2Button: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Mercado do Café", for: .normal)
         button.contentHorizontalAlignment = .left
@@ -73,6 +83,7 @@ class SalesTableViewCell: UITableViewCell {
         button.titleLabel?.adjustsFontSizeToFitWidth = true
         button.titleLabel?.minimumScaleFactor = 0.7
         button.backgroundColor = UIColor.clear
+        button.isHidden = true
         return button
     }()
 
@@ -82,25 +93,31 @@ class SalesTableViewCell: UITableViewCell {
         return partition
     }()
 
-    let firstStoreImageView: UIImageView = {
+    lazy var firstStoreImageView: UIImageView = {
         let storeImage = UIImageView()
         storeImage.layer.borderWidth = 1.0
         storeImage.layer.masksToBounds = false
         storeImage.layer.borderColor = UIColor.systemYellow.cgColor
         storeImage.layer.cornerRadius = 15
+        storeImage.contentMode = .scaleAspectFill
         storeImage.clipsToBounds = true
         return storeImage
     }()
 
-    let secondStoreImageView: UIImageView = {
+    lazy var secondStoreImageView: UIImageView = {
         let storeImage = UIImageView()
         storeImage.layer.borderWidth = 1.0
         storeImage.layer.masksToBounds = false
         storeImage.layer.borderColor = UIColor.systemYellow.cgColor
         storeImage.layer.cornerRadius = 15
         storeImage.clipsToBounds = true
+        storeImage.isHidden = true
         return storeImage
     }()
+    
+    @objc private func pressedStoreButton(sender: UIButton) {
+        selectedButton?.nextScreen(index: index!)
+    }
     
 }
 
@@ -108,7 +125,7 @@ class SalesTableViewCell: UITableViewCell {
 extension SalesTableViewCell {
     
     private func setupViews() {
-        self.contentView.addSubview(grainLabel)
+        self.contentView.addSubview(grainNameLabel)
         self.contentView.addSubview(typeOfGrainLabel)
         self.contentView.addSubview(partition)
         self.contentView.addSubview(firstStoreImageView)
@@ -119,7 +136,7 @@ extension SalesTableViewCell {
     
     private func setupConstraints() {
         // Permitindo a definição de autoLayout viewCode
-        grainLabel.translatesAutoresizingMaskIntoConstraints = false
+        grainNameLabel.translatesAutoresizingMaskIntoConstraints = false
         typeOfGrainLabel.translatesAutoresizingMaskIntoConstraints = false
         partition.translatesAutoresizingMaskIntoConstraints = false
         firstStoreImageView.translatesAutoresizingMaskIntoConstraints = false
@@ -129,15 +146,14 @@ extension SalesTableViewCell {
         
         // Setando as constraints
         NSLayoutConstraint.activate([
-            grainLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 58.5),
-            grainLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16)
-            //            grainLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 50.5)
+           grainNameLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 58.5),
+           grainNameLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16)
         ])
         
         NSLayoutConstraint.activate([
-            typeOfGrainLabel.topAnchor.constraint(equalTo: grainLabel.bottomAnchor),
+            typeOfGrainLabel.topAnchor.constraint(equalTo: grainNameLabel.bottomAnchor),
             typeOfGrainLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
-            typeOfGrainLabel.trailingAnchor.constraint(equalTo: self.leadingAnchor, constant: 206)
+            typeOfGrainLabel.trailingAnchor.constraint(equalTo: self.leadingAnchor, constant: 220)
         ])
         
         NSLayoutConstraint.activate([
@@ -148,7 +164,8 @@ extension SalesTableViewCell {
         ])
 
         NSLayoutConstraint.activate([
-            firstStoreImageView.topAnchor.constraint(equalTo: self.topAnchor, constant: 44),
+//            firstStoreImageView.topAnchor.constraint(equalTo: self.topAnchor, constant: 44),
+            firstStoreImageView.centerYAnchor.constraint(equalTo: partition.centerYAnchor),
             firstStoreImageView.leadingAnchor.constraint(equalTo: partition.trailingAnchor, constant: 8),
             firstStoreImageView.heightAnchor.constraint(equalToConstant: 30),
             firstStoreImageView.widthAnchor.constraint(equalToConstant: 30)
@@ -164,13 +181,13 @@ extension SalesTableViewCell {
         NSLayoutConstraint.activate([
             storeButton.centerYAnchor.constraint(equalTo: firstStoreImageView.centerYAnchor),
             storeButton.leadingAnchor.constraint(equalTo: firstStoreImageView.trailingAnchor, constant: 8),
-            storeButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -5)
+            storeButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -8)
         ])
         
         NSLayoutConstraint.activate([
             store2Button.centerYAnchor.constraint(equalTo: secondStoreImageView.centerYAnchor),
             store2Button.leadingAnchor.constraint(equalTo: secondStoreImageView.trailingAnchor, constant: 8),
-            store2Button.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -5)
+            store2Button.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -8)
         ])
         
     }

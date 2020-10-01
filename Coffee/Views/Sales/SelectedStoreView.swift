@@ -262,7 +262,7 @@ class SelectedStoreView: UIView {
         NSLayoutConstraint.activate([
             descriptionSensory.topAnchor.constraint(equalTo: detailsLabel.bottomAnchor, constant: 15),
             descriptionSensory.bottomAnchor.constraint(equalTo: partitionDetails.topAnchor, constant: -8),
-//            descriptionSensory.leadingAnchor.constraint(equalTo: sensoryProfileLabel.trailingAnchor, constant: 16),
+            descriptionSensory.leadingAnchor.constraint(greaterThanOrEqualTo: sensoryProfileLabel.trailingAnchor, constant: 4),
             descriptionSensory.trailingAnchor.constraint(equalTo: partitionDetails.trailingAnchor)
 
         ])

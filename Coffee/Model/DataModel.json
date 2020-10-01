@@ -1,6 +1,7 @@
 {
     "listOfStores": [{
             "name": "Amika Coffeehouse",
+            "imageStore": "AmikaCafe",
             "location": "R. Ana Bilhar, 1136B - Meireles, Fortaleza - CE, 60160-110",
             "latitude": -3.731385,
             "longitude": -38.490066,
@@ -18,7 +19,7 @@
                 "cultivation": "Variedade que prospera melhor em cultivo de altitude elevada, a partir dos 800 metros em relação ao nível do mar. A planta se adaptou bem ao clima brasileiro e às condições de crescimento encontradas no país.",
                 "flavor": "O Acaiá costuma agradar aos apreciadores que preferem um café suave, com notas frutadas. Muitos abrem mão de adoçar a bebida, já que o varietal tem sabor achocolatado e acidez média.",
                 "varietyOfGrain": "Variedade de café Acaiá",
-                "originOfGrain": "SVale da Grama, Média Mogiana",
+                "originOfGrain": "Vale da Grama, Média Mogiana",
                 "details": {
                     "sensoryProfile": "Chocolate, Nozes e Especiarias",
                     "altitude": "1050m",
@@ -30,6 +31,7 @@
 
         {
             "name": "Amika Coffeehouse",
+            "imageStore": "AmikaCafe",
             "location": "R. Ana Bilhar, 1136B - Meireles, Fortaleza - CE, 60160-110",
             "latitude": -3.731385,
             "longitude": -38.490066,
@@ -59,6 +61,7 @@
 
         {
             "name": "Amika Coffeehouse",
+            "imageStore": "AmikaCafe",
             "location": "R. Ana Bilhar, 1136B - Meireles, Fortaleza - CE, 60160-110",
             "latitude": -3.731385,
             "longitude": -38.490066,
@@ -88,6 +91,7 @@
 
         {
             "name": "Descoberta Café",
+            "imageStore": "DescobertaCafe",
             "location": "Rua Waldery Uchôa, 3 - Benfica, Fortaleza - CE, 60020-110",
             "latitude": -3.741928,
             "longitude": -38.536919,

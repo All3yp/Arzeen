@@ -9,11 +9,12 @@
 import Foundation
 
 struct ListOfResults: Codable {
-    let listOfStores: [ListOfStore]
+    var listOfStores: [ListOfStore]
 }
 
 struct ListOfStore: Codable {
     var name: String?
+    var imageStore: String?
     var location: String?
     var latitude: Double?
     var longitude: Double?
