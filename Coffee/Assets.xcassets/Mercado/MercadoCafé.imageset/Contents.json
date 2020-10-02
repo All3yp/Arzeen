@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "MercadoCafé.png",
+      "filename" : "MercadoCafé.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "MercadoCafé@2x.png",
+      "filename" : "MercadoCafé@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "MercadoCafé@3x.png",
+      "filename" : "MercadoCafé@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
