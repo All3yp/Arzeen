@@ -12,15 +12,16 @@ class ImageDrinkView: UIView {
 
     lazy var drinkImage: UIImageView = {
         let drinkImage = UIImageView()
-        drinkImage.image = UIImage(named: "chemex")
         drinkImage.clipsToBounds = true
         drinkImage.contentMode = .scaleAspectFill
+        drinkImage.image = UIImage(named: "Drink\(image!)")
         drinkImage.translatesAutoresizingMaskIntoConstraints = false
         return drinkImage
     }()
-    
-    override init(frame: CGRect) {
+    var image: Int?
+    init(frame: CGRect, photo: Int) {
         super.init(frame: frame)
+        image = photo
     }
     
     required init?(coder: NSCoder) {

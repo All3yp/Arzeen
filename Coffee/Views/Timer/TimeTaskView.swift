@@ -11,6 +11,9 @@ import UIKit
 // swiftlint:disable line_length
 class TimeTaskView: UIView {
     
+    var drink: Drink?
+    var counterTask = 0
+    
     let previousButton: UIButton = {
         let button = UIButton()
         button.setTitle("<<", for: .normal)
@@ -25,7 +28,6 @@ class TimeTaskView: UIView {
         let button = UIButton()
         button.setTitle(self.statusButton.name, for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 32, weight: .bold)
-//        button.backgroundColor = self.statusButton.color
         button.backgroundColor = UIColor.amareloEscuroCustomized
         button.layer.cornerRadius = 40
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -41,16 +43,13 @@ class TimeTaskView: UIView {
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
-    
+
     let circleImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = UIView.ContentMode.scaleAspectFit
-//        imageView.frame.size.width = 150
-//        imageView.frame.size.height = 150
         imageView.backgroundColor = UIColor.amareloEscuroCustomized
         imageView.layer.cornerRadius = 30
         imageView.translatesAutoresizingMaskIntoConstraints = false
-//        myImageView.center = self.view.center
         return imageView
     }()
     
@@ -62,17 +61,14 @@ class TimeTaskView: UIView {
         return view
     }()
     
-    var descriptionTask: UILabel = {
+    lazy var descriptionTask: UILabel = {
         var label = UILabel()
         label.numberOfLines = 0
         label.font = UIFont.systemFont(ofSize: 19, weight: .regular)
         label.textColor = UIColor.whiteColorCustomized
-        label.textAlignment = .center
+        label.textAlignment = .justified
         label.clipsToBounds = true
         label.translatesAutoresizingMaskIntoConstraints = false
-//        label.text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy. industry's standard dummy.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy."
-//        label.text = "Lorem Ipsum."
-        label.text = "Colocar o café ao centro e despejar pelas bordas, cuidado com a temperatura a água, ela não deve estar fervendo!"
         return label
     }()
     
@@ -123,6 +119,15 @@ class TimeTaskView: UIView {
         self.addSubview(descriptionTask)
         self.addSubview(timerView)
         self.addSubview(circleImageView)
+    }
+    
+    override func layoutSubviews() {
+        prepare()
+    }
+    
+    func prepare(){
+        descriptionTask.text = "\(drink!.stepByStep[0])"
+        timeSelected = [drink!.preparationTime[0],drink!.preparationTime[1]]
     }
     
     private func configureLayout() {
@@ -187,23 +192,23 @@ class TimeTaskView: UIView {
     
     private func nextStep() {
         switch self.statusButton {
-        case .start:
-            let timeInseconds = self.timeSelected[0] * 60 + self.timeSelected[1]
-            if timeInseconds != 0 {
-                self.delegate?.start(with: timeInseconds)
+            case .start:
+                let timeInseconds = self.timeSelected[0] * 60 + self.timeSelected[1]
+                if timeInseconds != 0 {
+                    self.delegate?.start(with: timeInseconds)
+                    self.statusButton = .pause
+                    
+                    self.timerView.isHidden = false
+                    self.setAnimation()
+                }
+            case .pause:
+                self.timerView.pause()
+                self.statusButton = .resume
+                self.delegate?.pause()
+            case .resume:
+                self.delegate?.resume()
                 self.statusButton = .pause
-                
-                self.timerView.isHidden = false
-                self.setAnimation()
-            }
-        case .pause:
-            self.timerView.pause()
-            self.statusButton = .resume
-            self.delegate?.pause()
-        case .resume:
-            self.delegate?.resume()
-            self.statusButton = .pause
-            self.timerView.resume()
+                self.timerView.resume()
         }
     }
     
@@ -249,7 +254,6 @@ class TimeTaskView: UIView {
     
     @objc func nextButtonUp() {
         nextButton.backgroundColor = .systemGray
-        
         print(">> vai para o próximo passo da receita")
     }
     

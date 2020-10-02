@@ -45,7 +45,7 @@ class DrinkTableViewCell: UITableViewCell {
         let intensity = UILabel()
         intensity.numberOfLines = 1
         intensity.adjustsFontSizeToFitWidth = true
-        intensity.minimumScaleFactor = CGFloat(17)
+        intensity.minimumScaleFactor = 0.7
         intensity.font = UIFont.systemFont(ofSize: 17, weight: .light)
         intensity.textColor = UIColor(red: 0.91, green: 0.84, blue: 0.76, alpha: 1.00)
         intensity.translatesAutoresizingMaskIntoConstraints = false
@@ -129,7 +129,7 @@ extension DrinkTableViewCell: ViewCode {
         NSLayoutConstraint.activate([
             intensity.topAnchor.constraint(equalTo: recommendedCoffee.bottomAnchor, constant: 15),
             intensity.leadingAnchor.constraint(equalTo: recommendedCoffee.leadingAnchor),
-            intensity.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.12)
+            intensity.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.2)
         ])
         
         NSLayoutConstraint.activate([

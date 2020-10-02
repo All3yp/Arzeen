@@ -14,9 +14,14 @@ class ConfigDrinkView: UIView {
 
     weak var timerDelegate: TimerController?
     
+    var drink: Drink?
+    
+    var iconsDrins = [UIImage(named: "chemex"),UIImage(named: "hario60"),UIImage(named: "moka"),UIImage(named: "prensa"),UIImage(named: "siafo"),UIImage(named: "chemex")]
+    var nameIcons = ["Chemex","Hario60","Moka","Prensa Francesa","Sifão","Chemex"]
+    
     lazy var drinkImageView: UIImageView = {
         let drinkImageView = UIImageView()
-        drinkImageView.image = UIImage(named: "chemex")
+        drinkImageView.image = UIImage(named: "Drink\(drink!.photoDrink)")
         drinkImageView.translatesAutoresizingMaskIntoConstraints = false
         return drinkImageView
     }()
@@ -31,7 +36,7 @@ class ConfigDrinkView: UIView {
     lazy var drinkName: UILabel = {
         let drinkName = UILabel()
         drinkName.numberOfLines = 0
-        drinkName.text = "Moka Teste"
+        drinkName.text = "Preparo \(drink!.name)"
         drinkName.adjustsFontSizeToFitWidth = true
         drinkName.minimumScaleFactor = 0.7
         drinkName.font = UIFont.systemFont(ofSize: 34, weight: .bold)
@@ -218,14 +223,19 @@ extension ConfigDrinkView: UICollectionViewDelegate, UICollectionViewDataSource 
         switch collectionView {
             case self.processCollection:
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "processCell", for: indexPath) as! ProcessCollectionViewCell
-                cell.configCell(processIcon: UIImage(named: "expresso")!, nameProcess: "Hario16")
+                cell.configCell(processIcon: iconsDrins[indexPath.row]!, nameProcess: nameIcons[indexPath.row])
                 let longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(presentMethod))
                 longPressGesture.minimumPressDuration = 1.0 // 1 second press
                 cell.addGestureRecognizer(longPressGesture)
                 return cell
             default:
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "measureCell", for: indexPath) as! MeasureCollectionViewCell
-                cell.prepareCell(cups: "1 xícara", volume: "200ml")
+                switch indexPath.row {
+                    case 0:
+                        cell.prepareCell(cups: "\(indexPath.row+1) xícara", volume: "\(drink!.mlPerCup*(indexPath.row+1))ml")
+                    default:
+                        cell.prepareCell(cups: "\(indexPath.row+1) xícaras", volume: "\(drink!.mlPerCup*(indexPath.row+1))ml")
+                }
                 return cell
         }
         

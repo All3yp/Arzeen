@@ -9,18 +9,22 @@
 import UIKit
 
 class ConfigDrinkViewController: UIViewController, TimerController {
+    
     func timer() {
         let timer = TimeTaskViewController()
+        timer.drink = drink
         navigationController?.pushViewController(timer, animated: true)
     }
     
     lazy var configDrinkView: ConfigDrinkView = {
         let configDrinkView = ConfigDrinkView()
-        
+        configDrinkView.drink = drink
         configDrinkView.timerDelegate = self
         configDrinkView.configDelegate = self
         return configDrinkView
     }()
+    
+    var drink: Drink?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +36,6 @@ extension ConfigDrinkViewController: ConfigDrinkDelegate {
     func presentMethodDrink() {
         let methodController = MethodViewController()
         let navigation = UINavigationController(rootViewController: methodController)
-        
         present(navigation, animated: true, completion: nil)
     }
 }

@@ -12,8 +12,10 @@ class SelectedDrinkView: UIView {
     
     var delegateDrink: DrinksDelegate?
     
+    var drink: Drink?
+    
     lazy var drinkImageView: ImageDrinkView = {
-        let drinkImageView = ImageDrinkView()
+        let drinkImageView = ImageDrinkView(frame: .zero, photo: drink!.photoDrink)
         drinkImageView.translatesAutoresizingMaskIntoConstraints = false
         return drinkImageView
     }()
@@ -21,7 +23,6 @@ class SelectedDrinkView: UIView {
     lazy var drinkName: UILabel = {
         let drinkName = UILabel()
         drinkName.numberOfLines = 0
-        drinkName.text = "Moka TEste"
         drinkName.adjustsFontSizeToFitWidth = true
         drinkName.minimumScaleFactor = 0.7
         drinkName.font = UIFont.systemFont(ofSize: 34, weight: .bold)
@@ -33,9 +34,7 @@ class SelectedDrinkView: UIView {
     lazy var descriptionDrink: UILabel = {
         let descriptionDrink = UILabel()
         descriptionDrink.numberOfLines = 0
-        descriptionDrink.text = "Teste Teste Teste Teste Teste Teste Teste Teste Teste Teste Teste Teste Teste Teste Teste Teste Teste Teste Teste Teste Teste Teste Teste Teste Teste " +
-            "Teste Teste Teste Teste Teste Teste Teste Teste Teste Teste Teste Teste Teste Teste Teste Teste Teste Teste Teste Teste Teste Teste Teste este Teste Teste"
-        //descriptionDrink.adjustsFontSizeToFitWidth = true
+        descriptionDrink.textAlignment = .justified
         descriptionDrink.minimumScaleFactor = 0.7
         descriptionDrink.font = UIFont.systemFont(ofSize: 18, weight: .regular)
         descriptionDrink.textColor = UIColor(red: 0.91, green: 0.84, blue: 0.76, alpha: 1.00)
@@ -91,10 +90,16 @@ class SelectedDrinkView: UIView {
     
     override func layoutSubviews() {
         setUp()
+        prepare()
     }
     
     @objc func presentConfigDrink() {
         delegateDrink?.presentConfigDrink()
+    }
+    
+    func prepare() {
+        drinkName.text = drink?.name
+        descriptionDrink.text = drink?.description
     }
     
 }
@@ -125,7 +130,7 @@ extension SelectedDrinkView: ViewCode {
         NSLayoutConstraint.activate([
             descriptionDrink.topAnchor.constraint(equalTo: drinkName.bottomAnchor, constant: 5),
             descriptionDrink.leadingAnchor.constraint(equalTo: drinkName.leadingAnchor),
-            descriptionDrink.trailingAnchor.constraint(equalTo: trailingAnchor)
+            descriptionDrink.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -15)
         ])
         NSLayoutConstraint.activate([
             harmonizationLabel.topAnchor.constraint(equalTo: descriptionDrink.bottomAnchor, constant: 10),
@@ -161,7 +166,7 @@ extension SelectedDrinkView: UICollectionViewDelegate, UICollectionViewDataSourc
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "harmCell", for: indexPath) as! HarmonizationCollectionViewCell
-        cell.configCell(imageFood: UIImage(named: "chemex")!, nameFood: "Totar de Abóbora")
+        cell.configCell(imageFood: UIImage(named: "Food\(indexPath.row+1)")!, nameFood: "\(drink!.combinations[indexPath.row].nameFood)")
         return cell
     }
 }

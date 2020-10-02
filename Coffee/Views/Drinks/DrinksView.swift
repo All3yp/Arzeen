@@ -11,6 +11,9 @@ import UIKit
 class DrinksView: UIView {
     
     weak var delegateDrink: DrinksViewController?
+    
+    let managerDrinks = DrinkManager.shared
+    var drinks: [Drink]!
 
     lazy var drinksTable: UITableView = {
         let drinksTable = UITableView()
@@ -26,6 +29,7 @@ class DrinksView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        drinks = managerDrinks.readData()
         setUp()
     }
     
@@ -66,7 +70,7 @@ extension DrinksView: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DrinkCell", for: indexPath) as! DrinkTableViewCell
-        cell.prepareCell(drinkImage: UIImage(named: "chemex")!, drinkName: "Macchiato", typeCoffee: "Serrado Mineiro", intensity: "Fraco", time: "5 min")
+        cell.prepareCell(drinkImage: UIImage(named: "Drink\(drinks[indexPath.row].photoDrink)")!, drinkName: drinks[indexPath.row].name, typeCoffee: drinks[indexPath.row].recommendedCoffee, intensity: drinks[indexPath.row].intensity, time: "\(drinks[indexPath.row].preparationTime[0])min")
         return cell
     }
     
@@ -76,6 +80,7 @@ extension DrinksView: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedDrink = SelectedDrinkViewController()
+        selectedDrink.drink = drinks[indexPath.row]
         delegateDrink?.navigationController?.pushViewController(selectedDrink, animated: true)
         tableView.deselectRow(at: indexPath, animated: true)
     }

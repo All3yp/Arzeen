@@ -10,8 +10,6 @@ import UIKit
 
 class MeasureCollectionViewCell: UICollectionViewCell {
     
-    
-    
     lazy var cup: UILabel = {
         let cup = UILabel()
         cup.numberOfLines = 0

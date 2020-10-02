@@ -17,7 +17,12 @@ class TimeTaskViewController: UIViewController {
     let inicialTime = 0
     var timer: Timer = Timer()
     var isTimerRunning = false
-    var timerTaskView = TimeTaskView()
+    lazy var timerTaskView:TimeTaskView = {
+        let timerTask = TimeTaskView()
+        timerTask.drink = drink
+        return timerTask
+    }()
+    var drink: Drink?
 
     var seconds: Int = Int() {
         didSet {

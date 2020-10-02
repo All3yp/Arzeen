@@ -17,11 +17,10 @@ class DrinksViewController: UIViewController {
         drinksView.delegateDrink = self
         return drinksView
     }()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view = drinksView
-        //setUp()
         navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(red: 0.91, green: 0.84, blue: 0.76, alpha: 1.00)]
         navigationItem.title = "Cafés"
         navigationItem.largeTitleDisplayMode = .always

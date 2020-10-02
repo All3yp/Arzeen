@@ -46,38 +46,38 @@ class FiveStarsView: UIView {
     func rating() {
         
         switch rate {
-        case 1:
-            star1 = StarView(starColor: UIColor.amareloEscuroCustomized!.cgColor)
-            star2 = StarView(starColor: UIColor.clear.cgColor)
-            star3 = StarView(starColor: UIColor.clear.cgColor)
-            star4 = StarView(starColor: UIColor.clear.cgColor)
-            star5 = StarView(starColor: UIColor.clear.cgColor)
-        case 2:
-            star1 = StarView(starColor: UIColor.amareloEscuroCustomized!.cgColor)
-            star2 = StarView(starColor: UIColor.amareloEscuroCustomized!.cgColor)
-            star3 = StarView(starColor: UIColor.clear.cgColor)
-            star4 = StarView(starColor: UIColor.clear.cgColor)
-            star5 = StarView(starColor: UIColor.clear.cgColor)
-        case 3:
-            star1 = StarView(starColor: UIColor.amareloEscuroCustomized!.cgColor)
-            star2 = StarView(starColor: UIColor.amareloEscuroCustomized!.cgColor)
-            star3 = StarView(starColor: UIColor.amareloEscuroCustomized!.cgColor)
-            star4 = StarView(starColor: UIColor.clear.cgColor)
-            star5 = StarView(starColor: UIColor.clear.cgColor)
-        case 4:
-            star1 = StarView(starColor: UIColor.amareloEscuroCustomized!.cgColor)
-            star2 = StarView(starColor: UIColor.amareloEscuroCustomized!.cgColor)
-            star3 = StarView(starColor: UIColor.amareloEscuroCustomized!.cgColor)
-            star4 = StarView(starColor: UIColor.amareloEscuroCustomized!.cgColor)
-            star5 = StarView(starColor: UIColor.clear.cgColor)
-        case 5:
-            star1 = StarView(starColor: UIColor.amareloEscuroCustomized!.cgColor)
-            star2 = StarView(starColor: UIColor.amareloEscuroCustomized!.cgColor)
-            star3 = StarView(starColor: UIColor.amareloEscuroCustomized!.cgColor)
-            star4 = StarView(starColor: UIColor.amareloEscuroCustomized!.cgColor)
-            star5 = StarView(starColor: UIColor.amareloEscuroCustomized!.cgColor)
-        default:
-            break
+            case 1:
+                star1 = StarView(starColor: UIColor.amareloEscuroCustomized!.cgColor)
+                star2 = StarView(starColor: UIColor.clear.cgColor)
+                star3 = StarView(starColor: UIColor.clear.cgColor)
+                star4 = StarView(starColor: UIColor.clear.cgColor)
+                star5 = StarView(starColor: UIColor.clear.cgColor)
+            case 2:
+                star1 = StarView(starColor: UIColor.amareloEscuroCustomized!.cgColor)
+                star2 = StarView(starColor: UIColor.amareloEscuroCustomized!.cgColor)
+                star3 = StarView(starColor: UIColor.clear.cgColor)
+                star4 = StarView(starColor: UIColor.clear.cgColor)
+                star5 = StarView(starColor: UIColor.clear.cgColor)
+            case 3:
+                star1 = StarView(starColor: UIColor.amareloEscuroCustomized!.cgColor)
+                star2 = StarView(starColor: UIColor.amareloEscuroCustomized!.cgColor)
+                star3 = StarView(starColor: UIColor.amareloEscuroCustomized!.cgColor)
+                star4 = StarView(starColor: UIColor.clear.cgColor)
+                star5 = StarView(starColor: UIColor.clear.cgColor)
+            case 4:
+                star1 = StarView(starColor: UIColor.amareloEscuroCustomized!.cgColor)
+                star2 = StarView(starColor: UIColor.amareloEscuroCustomized!.cgColor)
+                star3 = StarView(starColor: UIColor.amareloEscuroCustomized!.cgColor)
+                star4 = StarView(starColor: UIColor.amareloEscuroCustomized!.cgColor)
+                star5 = StarView(starColor: UIColor.clear.cgColor)
+            case 5:
+                star1 = StarView(starColor: UIColor.amareloEscuroCustomized!.cgColor)
+                star2 = StarView(starColor: UIColor.amareloEscuroCustomized!.cgColor)
+                star3 = StarView(starColor: UIColor.amareloEscuroCustomized!.cgColor)
+                star4 = StarView(starColor: UIColor.amareloEscuroCustomized!.cgColor)
+                star5 = StarView(starColor: UIColor.amareloEscuroCustomized!.cgColor)
+            default:
+                break
         }
         
     }

@@ -12,8 +12,11 @@ import UIKit
 
 class SelectedDrinkViewController: UIViewController {
     
+    var drink: Drink?
+    
     lazy var selectedDrink: UIView = {
         let selectedDrink = SelectedDrinkView()
+        selectedDrink.drink = drink
         selectedDrink.delegateDrink = self
         return selectedDrink
     }()
@@ -40,6 +43,7 @@ class SelectedDrinkViewController: UIViewController {
 extension SelectedDrinkViewController: DrinksDelegate {
     func presentConfigDrink() {
         let configDrinkController = ConfigDrinkViewController()
+        configDrinkController.drink = drink
         navigationController?.pushViewController(configDrinkController, animated: true)
     }
 }
