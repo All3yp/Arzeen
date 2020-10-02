@@ -15,21 +15,12 @@ class SelectedStoreViewController: UIViewController {
         return SelectedStoreView()
     }()
     
+    var storeSelectedData = ListOfStore()
+    var indexRow: Int?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view = selectedStore
-        // substituindo a view pela selected store view
-        selectedStore.mapView.centerToLocation(initialLocation)
-
-        // 3 - Cria um arquivo com a struct dos dados dos lugares//Artwork
-        // 4 - Cria um arquivo com os dados dos lugares (estão em Artworl.swift)
-        // 5 - Mostrando o artwork no mapa
-        //        let artwork = Artwork(
-        //          title: "King David Kalakaua",
-        //          locationName: "Waikiki Gateway Park",
-        //          discipline: "Sculpture",
-        //          coordinate: CLLocationCoordinate2D(latitude: 21.283921, longitude: -157.831661))
-        //        mapView.addAnnotation(artwork)
         
     }
     
@@ -37,10 +28,32 @@ class SelectedStoreViewController: UIViewController {
         super.viewDidAppear(animated)
         selectedStore.ratingAcidity.animate()
         selectedStore.ratingBody.animate()
-
+        // Animando as stars
+        
+        let initialLocation = CLLocation(latitude: storeSelectedData
+        .latitude!, longitude: storeSelectedData.longitude!)
+        
+        // substituindo a view pela selected store view
+        selectedStore.backgroundColor = UIColor.blackColorCustomized
+        
+        selectedStore.storeLabel.text = storeSelectedData.name
+        selectedStore.storeImageView.image = UIImage(named: storeSelectedData.imageStore!)
+        selectedStore.locationLabel.text = storeSelectedData.location
+        selectedStore.grainLabel.text = storeSelectedData.grain?.name
+        selectedStore.originOfGrainLabel.text = storeSelectedData.grain?.originOfGrain
+        selectedStore.descriptionSensory.text = storeSelectedData.grain?.details?.sensoryProfile
+        selectedStore.altitudeValueLabel.text = storeSelectedData.grain?.details?.altitude
+        //Consumindo o model nos elementos da tela
+        
+        selectedStore.mapView.centerToLocation(initialLocation)
+        
+        let artwork = Artwork(
+            title: storeSelectedData.name,
+            coordinate: CLLocationCoordinate2D(latitude: storeSelectedData
+                .latitude!, longitude: storeSelectedData.longitude!))
+        selectedStore.mapView.addAnnotation(artwork)
+        
     }
-    
-        let initialLocation = CLLocation(latitude: -3.731401, longitude: -38.490090)
     
 }
 
@@ -56,5 +69,5 @@ private extension MKMapView {
         setRegion(coordinateRegion, animated: true)
         // indica ao MKMapView pra mostrar a regiao representada por MKCoordinateRegion
     }
-
+    
 }

@@ -58,6 +58,9 @@
 		E658ACDB2524BEC900F22121 /* StoreAndGrains.swift in Sources */ = {isa = PBXBuildFile; fileRef = E658ACD92524BEC900F22121 /* StoreAndGrains.swift */; };
 		E658ACDC2524BEC900F22121 /* DataModel.json in Resources */ = {isa = PBXBuildFile; fileRef = E658ACDA2524BEC900F22121 /* DataModel.json */; };
 		E658ACDE2524C1A300F22121 /* SelectedStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E658ACDD2524C1A300F22121 /* SelectedStoreViewController.swift */; };
+		E658ACE32524ECA600F22121 /* ModelRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E658ACE22524ECA600F22121 /* ModelRepository.swift */; };
+		E658ACE52524FE3200F22121 /* ModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E658ACE42524FE3200F22121 /* ModelProtocol.swift */; };
+		E658ACE72525FD2A00F22121 /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = E658ACE62525FD2A00F22121 /* Artwork.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +129,9 @@
 		E658ACD92524BEC900F22121 /* StoreAndGrains.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreAndGrains.swift; sourceTree = "<group>"; };
 		E658ACDA2524BEC900F22121 /* DataModel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DataModel.json; sourceTree = "<group>"; };
 		E658ACDD2524C1A300F22121 /* SelectedStoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedStoreViewController.swift; sourceTree = "<group>"; };
+		E658ACE22524ECA600F22121 /* ModelRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelRepository.swift; sourceTree = "<group>"; };
+		E658ACE42524FE3200F22121 /* ModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelProtocol.swift; sourceTree = "<group>"; };
+		E658ACE62525FD2A00F22121 /* Artwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +231,7 @@
 				1867455025141E5400DB2043 /* UiColor+Extension.swift */,
 				186745572514FAB800DB2043 /* OnBoarding.swift */,
 				E2E018602526225E00EDF1AC /* Drink Model */,
+				E658ACE62525FD2A00F22121 /* Artwork.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -338,6 +345,8 @@
 			isa = PBXGroup;
 			children = (
 				E658ACB325222AEF00F22121 /* TableViewAutoLayout.swift */,
+				E658ACE22524ECA600F22121 /* ModelRepository.swift */,
+				E658ACE42524FE3200F22121 /* ModelProtocol.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -481,6 +490,7 @@
 				E2AB1871251C1998001176C5 /* RightViewController.swift in Sources */,
 				E658ACDB2524BEC900F22121 /* StoreAndGrains.swift in Sources */,
 				E2AB1850251C18B0001176C5 /* ConfigDrinkView.swift in Sources */,
+				E658ACE72525FD2A00F22121 /* Artwork.swift in Sources */,
 				180355B62510E85C00EE830F /* ViewController.swift in Sources */,
 				E2E0185B25261F5E00EDF1AC /* DrinkModel.swift in Sources */,
 				E658ACB425222AEF00F22121 /* TableViewAutoLayout.swift in Sources */,
@@ -511,7 +521,9 @@
 				186745562514EE3600DB2043 /* OnboardingCollectionViewCell.swift in Sources */,
 				E2AB1861251C1942001176C5 /* DrinksViewController.swift in Sources */,
 				E2AB1844251C1801001176C5 /* SelectedDrinkView.swift in Sources */,
+				E658ACE52524FE3200F22121 /* ModelProtocol.swift in Sources */,
 				E2AB185C251C18F2001176C5 /* MeasureCollectionViewCell.swift in Sources */,
+				E658ACE32524ECA600F22121 /* ModelRepository.swift in Sources */,
 				180089082524C453006FA3CC /* TimeTaskView.swift in Sources */,
 				18184585251CE4B300346F71 /* GrainsCollectionViewController.swift in Sources */,
 				E2AB1835251C170A001176C5 /* DrinksProtocol.swift in Sources */,

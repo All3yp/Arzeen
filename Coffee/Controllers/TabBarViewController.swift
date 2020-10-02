@@ -13,7 +13,7 @@ class TabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .globalMarromColor
+        view.backgroundColor = UIColor.globalMarromColor
 
         let mainVC = DrinksViewController()
         let navDrinksController = UINavigationController(rootViewController: mainVC)
@@ -33,7 +33,7 @@ class TabBarViewController: UITabBarController {
         let navSalesController = UINavigationController()
         // mudando a status bar color
         navSalesController.navigationBar.barStyle  = .black
-        navSalesController.navigationBar.barTintColor = UIColor.whiteColorCustomized
+        navSalesController.navigationBar.barTintColor = UIColor.globalMarromColor
         navSalesController.navigationBar.backgroundColor = UIColor.globalMarromColor
         let attrs = [ NSAttributedString.Key.foregroundColor: UIColor.whiteColorCustomized ]
         navSalesController.navigationBar.largeTitleTextAttributes = attrs as [NSAttributedString.Key: Any]
@@ -47,7 +47,9 @@ class TabBarViewController: UITabBarController {
         
         viewControllers = tabBarList
         
-        tabBar.backgroundColor = .globalMarromColor
-        tabBar.tintColor = .amareloEscuroCustomized
+        tabBar.backgroundColor = UIColor.globalMarromColor
+        tabBar.barTintColor = UIColor.blackColorCustomized
+        tabBar.tintColor = UIColor.amareloEscuroCustomized
+
     }
 }

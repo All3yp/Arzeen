@@ -22,7 +22,7 @@ class MethodViewController: UIViewController {
         view = methodView
         configureBackButton()
         navigationItem.title = titleMethod
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.amareloEscuroCustomized]
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.amareloEscuroCustomized!]
     }
     
     func configureBackButton() {
