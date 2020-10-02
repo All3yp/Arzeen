@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-//swiftlint:disable force_cast
+//swiftlint:disable force_cast trailing_comma
 class GrainsCollectionViewController: UIViewController {
     
     // MARK: - Lifecycle Methods
@@ -23,10 +23,14 @@ class GrainsCollectionViewController: UIViewController {
         
         Grain.init(imageName: "ArabicaGrain", name: "Arábica", state: "Rio Grande do Norte",
                    country: "Brasil", finalization: 1, contrast: 9, torra: 3),
+        Grain.init(imageName: "ObataAmarelo", name: "Obatã Amarelo", state: "São Paulo",
+                   country: "Brasil", finalization: 5, contrast: 6, torra: 2),
         Grain.init(imageName: "CatuaiGrain", name: "Catuaí", state: "Minas Gerais",
                    country: "Brasil", finalization: 4, contrast: 7, torra: 5),
-        Grain.init(imageName: "ArabicaGrain", name: "Robusta", state: "Acre",
-                   country: "Brasil", finalization: 4, contrast: 5, torra: 1)
+        Grain.init(imageName: "GraoRobusta", name: "Robusta", state: "Acre",
+                   country: "Brasil", finalization: 4, contrast: 5, torra: 1),
+        Grain.init(imageName: "CatuaiAmarelo", name: "Catuaí Amarelo", state: "Amazonas",
+                   country: "Brasil", finalization: 7, contrast: 8, torra: 4),
     ]
     
     lazy var collectionView: UICollectionView = {
